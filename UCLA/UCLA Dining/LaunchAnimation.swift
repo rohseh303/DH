@@ -17,90 +17,38 @@ struct LaunchAnimation: View {
             ContentView()
         }
         else {
-            VStack{
+            ZStack {
+                Color(.black)
+                    .ignoresSafeArea(.all)
+                //LinearGradient(gradient: Gradient(colors:[Color("TopBackground"),.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                //    .edgesIgnoringSafeArea(.all)
                 VStack{
-                    Image("LaunchScreenImage")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100, height: 100)
-                }
-                .scaleEffect(size)
-                .opacity(opacity)
-                .onAppear{
-                    withAnimation(.easeIn(duration: 1.2)) {
-                        self.size = 0.9
-                        self.opacity = 1.0
+                    VStack{
+                        Image("LaunchScreenImage")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100, height: 100)
+                    }
+                    .scaleEffect(size)
+                    .opacity(opacity)
+                    .onAppear{
+                        withAnimation(.easeIn(duration: 1.2)) {
+                            self.size = 0.9
+                            self.opacity = 1.0
+                        }
                     }
                 }
-            }
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    self.isActive = true
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        withAnimation{
+                            self.isActive=true
+                        }
+                    }
                 }
             }
         }
     }
 }
-
-//VStack {
-//    ZStack {
-//        //Content
-//        ZStack {
-            //ContentView()
-//        }
-//
-        //Splash
-//        ZStack {
-//            Color(.black)
-//               .opacity(1)
-//            Image("LaunchScreenImage")
-//                .resizable()
-//                .aspectRatio(contentMode: .fit)
-//                .frame(width: 100, height: 100)
-//                .scaleEffect(animate ? 30 : 1)
-//                .animation(Animation.easeIn(duration: 1), value: animate)
-//
-//        }
-//        .ignoresSafeArea(.all)
-//        //.animation(.default, value: offset)
-//        .opacity(animate ? 1 : 0)
-//    }
-//}
-//.onAppear {
-//    DispatchQueue.main.asyncAfter(deadline: .now()+2) {
-//        animate.toggle()
-//    }
-//}
-
-//{
-//VStack {
-//    ZStack {
-//        //Content
-//        ZStack {
-//            ContentView()
-//        }
-//
-//        //Splash
-//        ZStack {
-//            Color(.black)
-//                .opacity(1)
-//            Image("LaunchScreenImage")
-//                .resizable()
-//                .aspectRatio(contentMode: .fit)
-//                .frame(width: 100, height: 100)
-//                .scaleEffect(animate ? 30 : 1)
-//                .animation(Animation.easeIn(duration: 2),
-//                           value: animate)
-//        }
-//        .ignoresSafeArea(.all)
-//    }
-//}
-//.onAppear {
-//    DispatchQueue.main.asyncAfter(deadline: .now()+1) {
-//        animate.toggle()
-//    }
-//}
-//}
 
 struct LaunchAnimation_Previews: PreviewProvider {
     static var previews: some View {
