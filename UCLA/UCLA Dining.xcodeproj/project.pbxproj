@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B59AE1829086FA50015ABAB /* UCLAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE1729086FA50015ABAB /* UCLAApp.swift */; };
+		2B59AE1A29086FA50015ABAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE1929086FA50015ABAB /* ContentView.swift */; };
+		2B59AE1C29086FA90015ABAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B59AE1B29086FA90015ABAB /* Assets.xcassets */; };
+		2B59AE1F29086FA90015ABAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B59AE1E29086FA90015ABAB /* Preview Assets.xcassets */; };
+		2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */; };
+		2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE292908704C0015ABAB /* FoodIcon.swift */; };
+		2B59AE2C290870590015ABAB /* Hall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2B290870590015ABAB /* Hall.swift */; };
+		2B59AE2E290870720015ABAB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2D290870720015ABAB /* Menu.swift */; };
+		2B59AE30290870860015ABAB /* WebScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2F290870860015ABAB /* WebScraping.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B59AE1429086FA50015ABAB /* UCLA Dining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCLA Dining.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B59AE1729086FA50015ABAB /* UCLAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCLAApp.swift; sourceTree = "<group>"; };
+		2B59AE1929086FA50015ABAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B59AE1B29086FA90015ABAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B59AE1E29086FA90015ABAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimation.swift; sourceTree = "<group>"; };
+		2B59AE292908704C0015ABAB /* FoodIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodIcon.swift; sourceTree = "<group>"; };
+		2B59AE2B290870590015ABAB /* Hall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hall.swift; sourceTree = "<group>"; };
+		2B59AE2D290870720015ABAB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		2B59AE2F290870860015ABAB /* WebScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraping.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B59AE1129086FA50015ABAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B59AE0B29086FA50015ABAB = {
+			isa = PBXGroup;
+			children = (
+				2B59AE1629086FA50015ABAB /* UCLA Dining */,
+				2B59AE1529086FA50015ABAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B59AE1529086FA50015ABAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B59AE1429086FA50015ABAB /* UCLA Dining.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B59AE1629086FA50015ABAB /* UCLA Dining */ = {
+			isa = PBXGroup;
+			children = (
+				2B59AE1729086FA50015ABAB /* UCLAApp.swift */,
+				2B59AE1929086FA50015ABAB /* ContentView.swift */,
+				2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */,
+				2B59AE28290870320015ABAB /* Icons */,
+				2B59AE272908702C0015ABAB /* Menu */,
+				2B59AE1B29086FA90015ABAB /* Assets.xcassets */,
+				2B59AE1D29086FA90015ABAB /* Preview Content */,
+			);
+			path = "UCLA Dining";
+			sourceTree = "<group>";
+		};
+		2B59AE1D29086FA90015ABAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B59AE1E29086FA90015ABAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B59AE272908702C0015ABAB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2B59AE2D290870720015ABAB /* Menu.swift */,
+				2B59AE2F290870860015ABAB /* WebScraping.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		2B59AE28290870320015ABAB /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				2B59AE292908704C0015ABAB /* FoodIcon.swift */,
+				2B59AE2B290870590015ABAB /* Hall.swift */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B59AE1329086FA50015ABAB /* UCLA Dining */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B59AE2229086FA90015ABAB /* Build configuration list for PBXNativeTarget "UCLA Dining" */;
+			buildPhases = (
+				2B59AE1029086FA50015ABAB /* Sources */,
+				2B59AE1129086FA50015ABAB /* Frameworks */,
+				2B59AE1229086FA50015ABAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UCLA Dining";
+			productName = UCLA;
+			productReference = 2B59AE1429086FA50015ABAB /* UCLA Dining.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B59AE0C29086FA50015ABAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					2B59AE1329086FA50015ABAB = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2B59AE0F29086FA50015ABAB /* Build configuration list for PBXProject "UCLA Dining" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B59AE0B29086FA50015ABAB;
+			productRefGroup = 2B59AE1529086FA50015ABAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B59AE1329086FA50015ABAB /* UCLA Dining */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B59AE1229086FA50015ABAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B59AE1F29086FA90015ABAB /* Preview Assets.xcassets in Resources */,
+				2B59AE1C29086FA90015ABAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B59AE1029086FA50015ABAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B59AE2E290870720015ABAB /* Menu.swift in Sources */,
+				2B59AE1A29086FA50015ABAB /* ContentView.swift in Sources */,
+				2B59AE2C290870590015ABAB /* Hall.swift in Sources */,
+				2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */,
+				2B59AE30290870860015ABAB /* WebScraping.swift in Sources */,
+				2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */,
+				2B59AE1829086FA50015ABAB /* UCLAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2B59AE2029086FA90015ABAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2B59AE2129086FA90015ABAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B59AE2329086FA90015ABAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UCLA Dining/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HM33Q7CQ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohansehgal.UCLA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B59AE2429086FA90015ABAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UCLA Dining/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HM33Q7CQ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rohansehgal.UCLA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B59AE0F29086FA50015ABAB /* Build configuration list for PBXProject "UCLA Dining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B59AE2029086FA90015ABAB /* Debug */,
+				2B59AE2129086FA90015ABAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B59AE2229086FA90015ABAB /* Build configuration list for PBXNativeTarget "UCLA Dining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B59AE2329086FA90015ABAB /* Debug */,
+				2B59AE2429086FA90015ABAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B59AE0C29086FA50015ABAB /* Project object */;
+}
