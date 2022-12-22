@@ -19,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B4BDD59294D2A8F008136FE /* scraper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = scraper.py; path = "../Python Backend/scraper.py"; sourceTree = "<group>"; };
 		2B59AE1429086FA50015ABAB /* UCLA Dining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCLA Dining.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B59AE1729086FA50015ABAB /* UCLAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCLAApp.swift; sourceTree = "<group>"; };
 		2B59AE1929086FA50015ABAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,20 +42,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B4BDD58294D2A8F008136FE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2B4BDD59294D2A8F008136FE /* scraper.py */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2B59AE0B29086FA50015ABAB = {
 			isa = PBXGroup;
 			children = (
 				2B59AE1629086FA50015ABAB /* UCLA Dining */,
 				2B59AE1529086FA50015ABAB /* Products */,
-				2B4BDD58294D2A8F008136FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

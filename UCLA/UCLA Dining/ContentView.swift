@@ -7,7 +7,14 @@
 
 import SwiftUI
 
+enum APIError: Error {
+    case invalidStatusCode
+    case invalidResponse
+}
+
 struct ContentView: View {
+    @State private var result: [String: [String]]?
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -210,16 +217,55 @@ struct ContentView: View {
             }.edgesIgnoringSafeArea(.all)
         }
     }
-}
+    
+    func makePostRequest(completion: @escaping (Result<[String: [String]], Error>) -> Void) {
+        let url = URL(string: "https://i5bka3jah1.execute-api.us-west-1.amazonaws.com/prod")!
 
-//when user clicks on image menu links, create new structs for each or pass in functions
-//most likely you should be passing in the name/ basic deatils for restaurant and specific link to web scrape from
-//struct DisplayView: View {
-//    var body: some View {
-//        var l: link
-        
-//    }
-//}
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let parameters = ["key": "value"]
+        request.httpBody = try! JSONSerialization.data(withJSONObject: parameters)
+
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+
+            if let data = data, let response = response as? HTTPURLResponse {
+                if response.statusCode == 200 {
+                    do {
+                        let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+                        guard let dictionary = jsonObject as? [String: Any] else {
+                            completion(.failure(APIError.invalidResponse))
+                            return
+                        }
+
+                        var result: [String: [String]] = [:]
+                        for (key, value) in dictionary {
+                            if let array = value as? [String] {
+                                result[key] = array
+                            } else {
+                                completion(.failure(APIError.invalidResponse))
+                                return
+                            }
+                        }
+
+                        completion(.success(result))
+                    } catch {
+                        completion(.failure(error))
+                    }
+                } else {
+                    completion(.failure(APIError.invalidStatusCode))
+                }
+            }
+        }
+        task.resume()
+    }
+    
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -12,10 +12,6 @@ enum APIError: Error {
     case invalidResponse
 }
 
-struct Response: Codable {
-    var dictionary: [String: [String]]
-}
-
 struct ContentView: View {
     @State private var result: [String: [String]]?
 
