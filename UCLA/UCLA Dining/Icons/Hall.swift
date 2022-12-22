@@ -9,5 +9,6 @@ import Foundation
 
 struct Hall {
     var name: String
+    var dishes: [String]
     var image: String
 }

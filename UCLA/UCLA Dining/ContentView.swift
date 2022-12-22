@@ -26,9 +26,6 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                                 .frame(alignment: .center)
                         }.padding([.top],40)
-                            .onAppear {
-                                print("ContentView value of APIoutput: " ,APIoutput)
-                            }
             
                         
                         //Dining Hall buttons
@@ -39,6 +36,7 @@ struct ContentView: View {
 
                                 let EpicuriaData = Hall(
                                         name: "Epicuria at Covel",
+                                        dishes: APIoutput["Epicuria"] ?? ["something's wrong"],
                                         image: "Epicuria at Covel"
                                 )
                                 
@@ -53,6 +51,7 @@ struct ContentView: View {
                                 
                                 let DeNeveData = Hall(
                                         name: "De Neve",
+                                        dishes: APIoutput["DeNeve"] ?? ["something's wrong"],
                                         image: "De Neve Dining"
                                 )
                                 NavigationLink(
@@ -66,6 +65,8 @@ struct ContentView: View {
                                 //Bruin Plate icon
                                 let BruinPlateData = Hall(
                                         name: "Bruin Plate",
+                                        //change back to BruinPlate after testing
+                                        dishes: APIoutput["BruinCafe"] ?? ["something's wrong"],
                                         image: "Bruin Plate Dining"
                                 )
                                 NavigationLink(
