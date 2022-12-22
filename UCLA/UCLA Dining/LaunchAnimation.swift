@@ -13,7 +13,6 @@ enum APIError: Error {
 }
 
 struct LaunchAnimation: View {
-    //State var isActive = false
     @State private var size = 0.8
     @State private var opacity = 0.5
     
@@ -21,11 +20,9 @@ struct LaunchAnimation: View {
     @State private var result: [String: [String]]?
     
     var body: some View {
-        //if isActive {
         if result != nil {
             ContentView(APIoutput : result!)
         }
-        //}
         else {
             ZStack {
                 Color(.black)
