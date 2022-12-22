@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//@frozen struct Color
 
 struct ContentView: View {
     var body: some View {
@@ -25,6 +24,7 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                                 .frame(alignment: .center)
                         }.padding([.top],40)
+            
                         
                         //Dining Hall buttons
                         HStack{

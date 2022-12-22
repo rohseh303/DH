@@ -4,7 +4,6 @@
 //
 //  Created by Rohan Sehgal on 10/21/22.
 //
-
 import SwiftUI
 
 struct WebScraping: View {
