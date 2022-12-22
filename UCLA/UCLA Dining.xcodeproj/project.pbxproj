@@ -15,7 +15,6 @@
 		2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE292908704C0015ABAB /* FoodIcon.swift */; };
 		2B59AE2C290870590015ABAB /* Hall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2B290870590015ABAB /* Hall.swift */; };
 		2B59AE2E290870720015ABAB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2D290870720015ABAB /* Menu.swift */; };
-		2B59AE30290870860015ABAB /* WebScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2F290870860015ABAB /* WebScraping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,6 @@
 		2B59AE292908704C0015ABAB /* FoodIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodIcon.swift; sourceTree = "<group>"; };
 		2B59AE2B290870590015ABAB /* Hall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hall.swift; sourceTree = "<group>"; };
 		2B59AE2D290870720015ABAB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		2B59AE2F290870860015ABAB /* WebScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				2B59AE2D290870720015ABAB /* Menu.swift */,
-				2B59AE2F290870860015ABAB /* WebScraping.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -172,7 +169,6 @@
 				2B59AE1A29086FA50015ABAB /* ContentView.swift in Sources */,
 				2B59AE2C290870590015ABAB /* Hall.swift in Sources */,
 				2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */,
-				2B59AE30290870860015ABAB /* WebScraping.swift in Sources */,
 				2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */,
 				2B59AE1829086FA50015ABAB /* UCLAApp.swift in Sources */,
 			);

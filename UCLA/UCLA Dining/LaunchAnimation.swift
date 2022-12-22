@@ -30,8 +30,6 @@ struct LaunchAnimation: View {
             ZStack {
                 Color(.black)
                     .ignoresSafeArea(.all)
-                //LinearGradient(gradient: Gradient(colors:[Color("TopBackground"),.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                //    .edgesIgnoringSafeArea(.all)
                 VStack{
                     VStack{
                         Image("LaunchScreenImage")
@@ -57,12 +55,6 @@ struct LaunchAnimation: View {
                             print(error)
                         }
                     }
-                    
-                    //DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                    //    withAnimation{
-                    //        self.isActive=true
-                    //    }
-                    //}
                 }
             }
         }
