@@ -23,7 +23,7 @@ struct Menu: View {
             
             //where the web scraping data will go
             VStack{
-                WebScraping(hall: hall)
+                Text("display yo menu")
             }
             Spacer()
         }
