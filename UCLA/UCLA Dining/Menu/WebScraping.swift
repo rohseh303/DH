@@ -10,14 +10,13 @@ struct WebScraping: View {
     var hall: Hall
     
     var body: some View {
-        Text(hall.website)
+        Text("display yo menu")
     }
 }
 
 struct WebScraping_Previews: PreviewProvider {
     static let HallPreview = Hall(
         name: "sample dining hall",
-        website: "createwithswift.com",
         image: "Epicuria at Covel"
     )
     

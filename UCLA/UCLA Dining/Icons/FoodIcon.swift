@@ -39,7 +39,6 @@ struct FoodIcon: View {
 struct FoodIcon_Previews: PreviewProvider {
         static let HallPreview = Hall(
             name: "sample dining hall",
-            website: "createwithswift.com",
             image: "Epicuria at Covel"
         )
         

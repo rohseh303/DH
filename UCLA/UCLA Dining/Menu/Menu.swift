@@ -33,7 +33,6 @@ struct Menu: View {
 struct Menu_Previews: PreviewProvider {
     static let HallPreview = Hall(
         name: "sample dining hall",
-        website: "createwithswift.com",
         image: "Epicuria at Covel"
     )
     

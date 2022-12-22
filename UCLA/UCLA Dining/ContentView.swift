@@ -41,7 +41,6 @@ struct ContentView: View {
 
                                 let EpicuriaData = Hall(
                                         name: "Epicuria at Covel",
-                                        website: "createwithswift.com",
                                         image: "Epicuria at Covel"
                                 )
                                 
@@ -56,7 +55,6 @@ struct ContentView: View {
                                 
                                 let DeNeveData = Hall(
                                         name: "De Neve",
-                                        website: "createwithswift.com",
                                         image: "De Neve Dining"
                                 )
                                 NavigationLink(
@@ -70,7 +68,6 @@ struct ContentView: View {
                                 //Bruin Plate icon
                                 let BruinPlateData = Hall(
                                         name: "Bruin Plate",
-                                        website: "createwithswift.com",
                                         image: "Bruin Plate Dining"
                                 )
                                 NavigationLink(
