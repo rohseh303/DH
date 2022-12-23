@@ -10,26 +10,18 @@ import SwiftUI
 struct FoodIcon: View {
     var hall: Hall
     var body: some View {
-        ZStack {
-            Color(.green)
-                .ignoresSafeArea(.all)
-                .opacity(0)
-            //RoundedRectangle(cornerRadius: 20)
-                //.foregroundColor(.white)
-                //.frame(width:340, height: 250)
-            HStack(alignment: .top, spacing: 12) {
-                VStack {
-                    Image(hall.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 300)
-                        .cornerRadius(25)
-                    HStack {
-                        Text(hall.name)
-                            .padding([.leading],45)
-                            .foregroundColor(.white)
-                        Spacer()
-                    }
+        HStack(alignment: .top, spacing: 12) {
+            VStack {
+                Image(hall.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300)
+                    .cornerRadius(25)
+                HStack {
+                    Text(hall.name)
+                        .padding([.leading],45)
+                        .foregroundColor(.white)
+                    Spacer()
                 }
             }
         }

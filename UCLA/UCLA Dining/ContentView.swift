@@ -18,7 +18,6 @@ struct ContentView: View {
                     LinearGradient(gradient: Gradient(colors:[Color("TopBackground"),.blue]), startPoint: .topLeading, endPoint: .bottomTrailing)
                         .edgesIgnoringSafeArea(.all)
                     VStack {
-                        Spacer()
                         //UCLA Dining Hall text
                         HStack {
                             Text("UCLA Dining Halls")
@@ -29,184 +28,148 @@ struct ContentView: View {
             
                         
                         //Dining Hall buttons
-                        HStack{
-                            VStack{
-                                //Epicuria and De Neve Dining icons
-                                Spacer()
+                        VStack{
 
-                                let EpicuriaData = Hall(
-                                        name: "Epicuria at Covel",
-                                        dishes: APIoutput["Epicuria"] ?? ["something's wrong"],
-                                        image: "Epicuria at Covel"
-                                )
-                                
-                                NavigationLink(
-                                    destination: Menu(hall: EpicuriaData),
-                                    label: {
-                                        FoodIcon(hall: EpicuriaData)
-                                    })
-                                
-                                Spacer()
-                                    
-                                
-                                let DeNeveData = Hall(
-                                        name: "De Neve",
-                                        dishes: APIoutput["DeNeve"] ?? ["something's wrong"],
-                                        image: "De Neve Dining"
-                                )
-                                NavigationLink(
-                                    destination: Menu(hall: DeNeveData),
-                                    label: {
-                                        FoodIcon(hall: DeNeveData)
-                                    })
-                                    
-                                Spacer()
-                        
-                                //Bruin Plate icon
-                                let BruinPlateData = Hall(
-                                        name: "Bruin Plate",
-                                        //change back to BruinPlate after testing
-                                        dishes: APIoutput["BruinCafe"] ?? ["something's wrong"],
-                                        image: "Bruin Plate Dining"
-                                )
-                                NavigationLink(
-                                    destination: Menu(hall: BruinPlateData),
-                                    label: {
-                                        FoodIcon(hall: BruinPlateData)
-                                    })
-                            }
-                        }//.padding([.bottom], 30)
-                        
-                        //Restaurant Buttons + text
-                        HStack{
-                            VStack{
-                                
-                                //Restaurant text
-                                HStack {
-                                    Text("Quick Service Restaurants")
-                                        .font(.system(size:28, weight: .medium, design: .default))
-                                        .foregroundColor(.white)
-                                    Spacer()
-                                }
-                                
-                                //restaurant icons
-                                VStack{
-                                    Spacer()
-                                    
-                                    HStack{
-                                        Spacer()
-                                        
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("Epicuria at Ackerman")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        
-                                        Spacer()
-                                        
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("the drey")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        
-                                        Spacer()
-                                    }
-                                    
-                                    Spacer()
-                                    
-                                    HStack{
-                                        Spacer()
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("Bruin Bowl")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        Spacer()
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("Rendezvous")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        Spacer()
-                                    }
-                                    Spacer()
-                                    HStack{
-                                        Spacer()
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("Bruin Cafe")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        Spacer()
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("Cafe 1919")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        Spacer()
-                                    }
-                                    Spacer()
-                                    HStack{
-                                        Spacer()
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("De Neve Late Night")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        Spacer()
-                                        NavigationLink(
-                                            destination: Text("menu"),
-                                            label: {
-                                                HStack{
-                                                    Image("The Study at Hedrick")
-                                                        .resizable()
-                                                        .aspectRatio(contentMode: .fit)
-                                                        .frame(width: 150)
-                                                }
-                                            })
-                                        Spacer()
-                                    }
-                                    Spacer()
-                                }
-                            }
+                            let EpicuriaData = Hall(
+                                    name: "Epicuria at Covel",
+                                    dishes: APIoutput["Epicuria"] ?? ["something's wrong"],
+                                    image: "Epicuria at Covel"
+                            )
+                            
+                            let DeNeveData = Hall(
+                                    name: "De Neve",
+                                    dishes: APIoutput["DeNeve"] ?? ["something's wrong"],
+                                    image: "De Neve Dining"
+                            )
+                            
+                            let BruinPlateData = Hall(
+                                    name: "Bruin Plate",
+                                    //change back to BruinPlate after testing
+                                    dishes: APIoutput["BruinPlate"] ?? ["something's wrong"],
+                                    image: "Bruin Plate Dining"
+                            )
+                             
+                            //Spacer()
+                            //Epicuria Icon
+                            NavigationLink(
+                                destination: Menu(hall: EpicuriaData),
+                                label: {
+                                    FoodIcon(hall: EpicuriaData)
+                                })
+                            
+                            //De Neve Icon
+                            NavigationLink(
+                                destination: Menu(hall: DeNeveData),
+                                label: {
+                                    FoodIcon(hall: DeNeveData)
+                                })
+                            
+                            //Bruin Plate icon
+                            NavigationLink(
+                                destination: Menu(hall: BruinPlateData),
+                                label: {
+                                    FoodIcon(hall: BruinPlateData)
+                                })
+                            //Spacer()
                         }
-                        Spacer()
+                        
+                        //Restaurant text
+                        HStack {
+                            Text("Quick Service Restaurants")
+                                .font(.system(size:28, weight: .medium, design: .default))
+                                .foregroundColor(.white)
+                            //Spacer()
+                        }
+                        
+                        //Restaurant Buttons
+                        VStack{
+                            
+                            let EpicuriaAckermanData = Hall(
+                                    name: "Epicuria at Ackerman",
+                                    dishes: APIoutput["EpicAtAckerman"] ?? ["something's wrong"],
+                                    image: "Epicuria at Ackerman"
+                            )
+                            
+                            NavigationLink(
+                                destination: Menu(hall: EpicuriaAckermanData),
+                                label: {
+                                    FoodIcon(hall: EpicuriaAckermanData)
+                                })
+                            
+                            let DreyData = Hall(
+                                    name: "The Drey",
+                                    dishes: APIoutput["Epicuria"] ?? ["something's wrong"],
+                                    image: "the drey"
+                            )
+                            
+                            NavigationLink(
+                                destination: Menu(hall: DreyData),
+                                label: {
+                                    FoodIcon(hall: DreyData)
+                                })
+                            
+                            let RendezvousData = Hall(
+                                    name: "Rendezvous",
+                                    dishes: APIoutput["Rendezvous"] ?? ["something's wrong"],
+                                    image: "Rendezvous"
+                            )
+                            
+                            NavigationLink(
+                                destination: Menu(hall: RendezvousData),
+                                label: {
+                                    FoodIcon(hall: RendezvousData)
+                                })
+                            
+                            let BruinCafeData = Hall(
+                                    name: "Bruin Cafe",
+                                    dishes: APIoutput["Bruin Cafe"] ?? ["something's wrong"],
+                                    image: "Bruin Cafe"
+                            )
+                            
+                            NavigationLink(
+                                destination: Menu(hall: BruinCafeData),
+                                label: {
+                                    FoodIcon(hall: BruinCafeData)
+                                })
+                            
+                            let Cafe1919Data = Hall(
+                                    name: "Cafe 1919",
+                                    dishes: APIoutput["Cafe 1919"] ?? ["something's wrong"],
+                                    image: "Cafe 1919"
+                            )
+                            
+                            NavigationLink(
+                                destination: Menu(hall: Cafe1919Data),
+                                label: {
+                                    FoodIcon(hall: Cafe1919Data)
+                                })
+                            
+                            let DeNeveLateNightData = Hall(
+                                    name: "De Neve Late Night",
+                                    dishes: APIoutput["DeNeveLateNight"] ?? ["something's wrong"],
+                                    image: "De Neve Late Night"
+                            )
+                            
+                            NavigationLink(
+                                destination: Menu(hall: DeNeveLateNightData),
+                                label: {
+                                    FoodIcon(hall: DeNeveLateNightData)
+                                })
+                        
+                            let TheStudyatHedrickData = Hall(
+                                    name: "The Study at Hedrick",
+                                    dishes: APIoutput["HedrickStudy"] ?? ["something's wrong"],
+                                    image: "The Study at Hedrick"
+                            )
+                            
+                            NavigationLink(
+                                destination: Menu(hall: TheStudyatHedrickData),
+                                label: {
+                                    FoodIcon(hall: TheStudyatHedrickData)
+                                })
+                            
+                            //what is feast at rieber?
+                    }
                     }
                     .padding()
                 }
