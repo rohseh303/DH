@@ -14,12 +14,12 @@ struct Menu: View {
                 
                 //contains header and menu title
                 ZStack(alignment: .bottomLeading) {
-                    Color(.yellow)
+                    Color(.gray)
                         .ignoresSafeArea(.all)
                     Text("Menu - " + hall.name)
                         .font(.system(size:28, weight: .medium, design: .default))
                 }
-                .frame(height: 80)
+                .frame(height: 50)
                 
                 ScrollView {
                     //where the web scraping data will go
