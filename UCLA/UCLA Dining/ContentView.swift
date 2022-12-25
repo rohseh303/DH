@@ -12,6 +12,7 @@ struct ContentView: View {
     var APIoutput : [String: [String]]
     
     var body: some View {
+        let NoData = "No Data displayed"
         
         NavigationView {
             ZStack {
@@ -45,20 +46,20 @@ struct ContentView: View {
                                     
                                     let EpicuriaData = Hall(
                                         name: "Epicuria at Covel",
-                                        dishes: APIoutput["Epicuria"] ?? ["something's wrong"],
+                                        dishes: APIoutput["Epicuria"] ?? [NoData],
                                         image: "Epicuria at Covel"
                                     )
                                     
                                     let DeNeveData = Hall(
                                         name: "De Neve",
-                                        dishes: APIoutput["DeNeve"] ?? ["something's wrong"],
+                                        dishes: APIoutput["DeNeve"] ?? [NoData],
                                         image: "De Neve Dining"
                                     )
                                     
                                     let BruinPlateData = Hall(
                                         name: "Bruin Plate",
                                         //change back to BruinPlate after testing
-                                        dishes: APIoutput["BruinPlate"] ?? ["something's wrong"],
+                                        dishes: APIoutput["BruinPlate"] ?? [NoData],
                                         image: "Bruin Plate Dining"
                                     )
                                     
@@ -98,7 +99,7 @@ struct ContentView: View {
                                     
                                     let EpicuriaAckermanData = Hall(
                                         name: "Epicuria at Ackerman",
-                                        dishes: APIoutput["EpicAtAckerman"] ?? ["something's wrong"],
+                                        dishes: APIoutput["EpicAtAckerman"] ?? [NoData],
                                         image: "Epicuria at Ackerman"
                                     )
                                     
@@ -110,7 +111,7 @@ struct ContentView: View {
                                     
                                     let DreyData = Hall(
                                         name: "The Drey",
-                                        dishes: APIoutput["Drey"] ?? ["something's wrong"],
+                                        dishes: APIoutput["Drey"] ?? [NoData],
                                         image: "the drey"
                                     )
                                     
@@ -122,7 +123,7 @@ struct ContentView: View {
                                     
                                     let RendezvousData = Hall(
                                         name: "Rendezvous",
-                                        dishes: APIoutput["Rendezvous"] ?? ["something's wrong"],
+                                        dishes: APIoutput["Rendezvous"] ?? [NoData],
                                         image: "Rendezvous"
                                     )
                                     
@@ -134,7 +135,7 @@ struct ContentView: View {
                                     
                                     let BruinCafeData = Hall(
                                         name: "Bruin Cafe",
-                                        dishes: APIoutput["BruinCafe"] ?? ["something's wrong"],
+                                        dishes: APIoutput["BruinCafe"] ?? [NoData],
                                         image: "Bruin Cafe"
                                     )
                                     
@@ -146,7 +147,7 @@ struct ContentView: View {
                                     
                                     let Cafe1919Data = Hall(
                                         name: "Cafe 1919",
-                                        dishes: APIoutput["Cafe 1919"] ?? ["something's wrong"],
+                                        dishes: APIoutput["Cafe 1919"] ?? [NoData],
                                         image: "Cafe 1919"
                                     )
                                     
@@ -158,7 +159,7 @@ struct ContentView: View {
                                     
                                     let DeNeveLateNightData = Hall(
                                         name: "De Neve Late Night",
-                                        dishes: APIoutput["DeNeveLateNight"] ?? ["something's wrong"],
+                                        dishes: APIoutput["DeNeveLateNight"] ?? [NoData],
                                         image: "De Neve Late Night"
                                     )
                                     
@@ -170,7 +171,7 @@ struct ContentView: View {
                                     
                                     let TheStudyatHedrickData = Hall(
                                         name: "The Study at Hedrick",
-                                        dishes: APIoutput["HedrickStudy"] ?? ["something's wrong"],
+                                        dishes: APIoutput["HedrickStudy"] ?? [NoData],
                                         image: "The Study at Hedrick"
                                     )
                                     
