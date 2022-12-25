@@ -24,6 +24,8 @@ struct FoodIcon: View {
                 .foregroundColor(.white)
             Text(hall.name)
                 .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 10))
+                .foregroundColor(.black)
+                .fontWeight(.semibold)
         }
         .shadow(color: Color.black, radius: 10, x: 0, y: 0)
         .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
