@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Logo_the drey_200x200.png",
+      "filename" : "the_drey_350x200.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Logo_the drey_200x200 1.png",
+      "filename" : "the_drey_350x200 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Logo_the drey_200x200 2.png",
+      "filename" : "the_drey_350x200 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

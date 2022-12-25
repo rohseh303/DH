@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Logo_Bruin Cafe_200x200.png",
+      "filename" : "Bruin_Cafe_350x200.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Logo_Bruin Cafe_200x200 1.png",
+      "filename" : "Bruin_Cafe_350x200 1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Logo_Bruin Cafe_200x200 2.png",
+      "filename" : "Bruin_Cafe_350x200 2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
