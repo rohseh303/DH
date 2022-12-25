@@ -14,18 +14,23 @@ struct Menu: View {
                 
                 //contains header and menu title
                 ZStack(alignment: .bottomLeading) {
-                    Color(.gray)
-                        .ignoresSafeArea(.all)
+                    //Color(.gray)
+                      //  .ignoresSafeArea(.all)
                     Text("Menu - " + hall.name)
                         .font(.system(size:28, weight: .medium, design: .default))
+                        .underline()
+                        .italic()
+                    
                 }
                 .frame(height: 50)
+                .shadow(color: Color.black, radius: 30, x: 0, y: 0)
                 
                 ScrollView {
                     //where the web scraping data will go
                     VStack{
                         ForEach(hall.dishes, id: \.self) { dish in
                             Text(dish)
+                                .font(.title)
                         }
                     }
                     Spacer()
