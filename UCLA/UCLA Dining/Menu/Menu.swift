@@ -30,13 +30,19 @@ struct Menu: View {
                 .shadow(color: Color.black, radius: 30, x: 0, y: 0)
                 
                 ScrollView {
-                    //where the web scraping data will go
                     VStack{
-                        ForEach(hall.dishes, id: \.self) { dish in
-                            Text(dish)
-                                .font(.title)
-                                .foregroundColor(.black)
+                        if hall.dishes.count > 0 {
+                            ForEach(hall.dishes, id: \.self) { dish in
+                                Text(dish)
+                                    .font(.title)
+                                    .foregroundColor(.black)
+                            }
                         }
+                            else {
+                                Text("No Data displayed")
+                                    .font(.title)
+                                    .foregroundColor(.black)
+                            }
                     }
                     Spacer()
                 }
