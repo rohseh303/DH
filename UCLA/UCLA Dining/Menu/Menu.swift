@@ -39,7 +39,7 @@ struct Menu: View {
                             }
                         }
                             else {
-                                Text("No Data displayed")
+                                Text("No Data Displayed")
                                     .font(.title)
                                     .foregroundColor(.black)
                             }
