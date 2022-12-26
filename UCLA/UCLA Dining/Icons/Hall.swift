@@ -11,4 +11,5 @@ struct Hall {
     var name: String
     var dishes: [String]
     var image: String
+    var fixed_menu: String?
 }

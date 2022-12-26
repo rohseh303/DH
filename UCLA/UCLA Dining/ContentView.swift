@@ -114,11 +114,12 @@ struct ContentView: View {
                                     let DreyData = Hall(
                                         name: "The Drey",
                                         dishes: APIoutput["Drey"] ?? [NoData],
-                                        image: "the drey"
+                                        image: "the drey",
+                                        fixed_menu: "The Drey fixed menu"
                                     )
                                     
                                     NavigationLink(
-                                        destination: Menu(hall: DreyData),
+                                        destination: fixed_menu(hall: DreyData),
                                         label: {
                                             FoodIcon(hall: DreyData)
                                         })

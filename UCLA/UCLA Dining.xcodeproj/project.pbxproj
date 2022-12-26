@@ -16,6 +16,8 @@
 		2B59AE2C290870590015ABAB /* Hall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2B290870590015ABAB /* Hall.swift */; };
 		2B59AE2E290870720015ABAB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2D290870720015ABAB /* Menu.swift */; };
 		2B663DB729563D2E0087AAE6 /* CKWistfulRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */; };
+		2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927529598BF40039AD9E /* fixed_menu.swift */; };
+		2BCE927A295994510039AD9E /* ImageZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE9279295994510039AD9E /* ImageZoomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2B59AE2D290870720015ABAB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		2B663DB529563C8B0087AAE6 /* UCLA-Dining-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UCLA-Dining-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CKWistfulRegular.ttf; sourceTree = "<group>"; };
+		2BCE927529598BF40039AD9E /* fixed_menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fixed_menu.swift; sourceTree = "<group>"; };
+		2BCE9279295994510039AD9E /* ImageZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				2B59AE2D290870720015ABAB /* Menu.swift */,
+				2BCE927529598BF40039AD9E /* fixed_menu.swift */,
+				2BCE9279295994510039AD9E /* ImageZoomView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -180,11 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B59AE2E290870720015ABAB /* Menu.swift in Sources */,
+				2BCE927A295994510039AD9E /* ImageZoomView.swift in Sources */,
 				2B59AE1A29086FA50015ABAB /* ContentView.swift in Sources */,
 				2B59AE2C290870590015ABAB /* Hall.swift in Sources */,
 				2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */,
 				2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */,
 				2B59AE1829086FA50015ABAB /* UCLAApp.swift in Sources */,
+				2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
