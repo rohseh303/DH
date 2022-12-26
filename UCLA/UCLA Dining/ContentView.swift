@@ -18,7 +18,8 @@ struct ContentView: View {
             ZStack {
                 //LinearGradient(gradient: Gradient(colors:[Color("TopBackground"),Color("BottomBackground")]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     //.edgesIgnoringSafeArea(.all)
-                
+                Color.white
+                    .ignoresSafeArea(.all)
                 //v stack with your ucla dining hall text
                 VStack {
                     //UCLA Dining Hall text / NAVBAR
@@ -31,9 +32,10 @@ struct ContentView: View {
                             .font(.system(size: 32))
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
-                    }.padding(.vertical, -8)
-                        .padding(.horizontal, 87)
-                        .background(Color.white)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .background(Color("NavBar color"))
+                    .edgesIgnoringSafeArea(.horizontal)
 
                     
                     ScrollView {

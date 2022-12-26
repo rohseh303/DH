@@ -10,16 +10,20 @@ import SwiftUI
 struct Menu: View {
     var hall: Hall
     var body: some View {
+        ZStack{
+            Color.white
+                .ignoresSafeArea(.all)
             VStack {
                 
                 //contains header and menu title
                 ZStack(alignment: .bottomLeading) {
                     //Color(.gray)
-                      //  .ignoresSafeArea(.all)
+                    //  .ignoresSafeArea(.all)
                     Text("Menu - " + hall.name)
                         .font(.system(size:28, weight: .medium, design: .default))
                         .underline()
                         .italic()
+                        .foregroundColor(.black)
                     
                 }
                 .frame(height: 50)
@@ -31,11 +35,13 @@ struct Menu: View {
                         ForEach(hall.dishes, id: \.self) { dish in
                             Text(dish)
                                 .font(.title)
+                                .foregroundColor(.black)
                         }
                     }
                     Spacer()
                 }
             }
+        }
     }
 }
 

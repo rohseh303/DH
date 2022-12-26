@@ -18,6 +18,7 @@ struct FoodIcon: View {
                 //.aspectRatio(contentMode: .fit)
                 .frame(width: 350, height: 200)
                 .cornerRadius(20)
+                .shadow(color: Color.black, radius: 10, x: 0, y: 0)
             
             RoundedCorners(tl: 0, tr: 0, bl: 20, br: 20)
                 .frame(width: 350, height: 40)
@@ -25,9 +26,8 @@ struct FoodIcon: View {
             Text(hall.name)
                 .padding(EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 10))
                 .foregroundColor(.black)
-                .fontWeight(.semibold)
+                .font(.system(size: 17, weight: .medium, design: .default))
         }
-        .shadow(color: Color.black, radius: 10, x: 0, y: 0)
         .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 0))
     }
 }
