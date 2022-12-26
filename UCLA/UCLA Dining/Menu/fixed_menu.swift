@@ -33,7 +33,7 @@ struct fixed_menu: View {
                 .shadow(color: Color.black, radius: 30, x: 0, y: 0)
                 
                 VStack{
-                    ScrollView(.vertical, showsInicators: false) {
+                    ScrollView(.vertical, showsIndicators: false) {
                         Image(hall.fixed_menu!)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
