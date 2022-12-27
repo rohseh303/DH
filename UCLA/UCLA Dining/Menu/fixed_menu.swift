@@ -10,55 +10,42 @@ import SwiftUI
 
 struct fixed_menu: View {
     // Use a scale effect to zoom in and out
-    @State private var scale: CGFloat = 1.0
     var hall: Hall
     var body: some View {
-        ZStack{
-            Color.white
-                .ignoresSafeArea(.all)
-            VStack {
-                
-                //contains header and menu title
-                //ZStack(alignment: .bottomLeading) {
-                    //Color(.gray)
-                    //  .ignoresSafeArea(.all)
-                //    Text("Menu - " + hall.name)
-                //        .font(.system(size:28, weight: .medium, design: .default))
-                //        .underline()
-                //        .italic()
-                //        .foregroundColor(.black)
-                //
-                //}
-                //.frame(height: 50)
-                //.shadow(color: Color.black, radius: 30, x: 0, y: 0)
-                
-                VStack{
-                    ScrollView(.vertical, showsIndicators: false) {
-                        Image(hall.fixed_menu![0])
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(maxWidth: .infinity)
-                            .scaleEffect(scale)
-                            .gesture(
-                                MagnificationGesture()
-                                    .onChanged { self.scale = $0 }
-                                    .onEnded { _ in self.scale = 1.0 }
-                                )
+        if hall.sections! <= 1 {
+            Fixed_Menu_Section(hall: hall, section_number: 0)
+        }
+        else {
+            TabView {
+                ForEach(0..<hall.sections!, id: \.self) { index in
+                    Fixed_Menu_Section(hall: hall, section_number: index)
+                        .tabItem {
+                            Image(systemName: "circle")
+                            Text(hall.section_names![index])
                         }
                 }
-                Spacer()
             }
-        }.navigationBarTitle("Menu - " + hall.name)
-        //.navigationBarAppearance(.background(Color("NavBar color")))
+        }
+
+        
+        //if hall.fixed_menu!.count > 0 {
+        //    ForEach(0..<hall.sections!, id: \.self) { index in
+        //        Fixed_Menu_Section(hall: hall, section_number: index)
+        //    }
+        //}
+        //Fixed_Menu_Section(hall: hall, section_number: 0)
     }
 }
 
 struct fixed_menu_Previews: PreviewProvider {
     static let HallPreview = Hall(
-        name: "The Drey",
+        name: "Bruin Cafe",
         dishes: ["default", "preview", "menu"],
-        image: "the drey",
-        fixed_menu: ["The Drey fixed menu"]
+        image: "Bruin Cafe",
+        fixed_menu: ["Bruin Cafe fixed menu 1", "Bruin Cafe fixed menu 2"],
+        sections: 2,
+        section_names: ["Lunch & Dinner", "Smoothies and Coffee"]
+
     )
     
     static var previews: some View {

@@ -101,11 +101,14 @@ struct ContentView: View {
                                     let BruinCafeData = Hall(
                                         name: "Bruin Cafe",
                                         dishes: APIoutput["BruinCafe"] ?? [NoData],
-                                        image: "Bruin Cafe"
+                                        image: "Bruin Cafe",
+                                        fixed_menu: ["Bruin Cafe fixed menu 1", "Bruin Cafe fixed menu 2"],
+                                        sections: 2,
+                                        section_names: ["Lunch & Dinner", "Smoothies and Coffee"]
                                     )
                                     
                                     NavigationLink(
-                                        destination: Menu(hall: BruinCafeData),
+                                        destination: fixed_menu(hall: BruinCafeData),
                                         label: {
                                             FoodIcon(hall: BruinCafeData)
                                         })
@@ -126,7 +129,8 @@ struct ContentView: View {
                                         name: "The Drey",
                                         dishes: APIoutput["Drey"] ?? [NoData],
                                         image: "the drey",
-                                        fixed_menu: ["The Drey fixed menu"]
+                                        fixed_menu: ["The Drey fixed menu 1"],
+                                        sections: 1
                                     )
                                     
                                     NavigationLink(

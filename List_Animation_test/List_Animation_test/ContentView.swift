@@ -8,25 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showList = false
+    let views: [String: AnyView] = ["View 1": AnyView(Text("View 1")), "View 2": AnyView(Text("View 2"))]
 
     var body: some View {
-        VStack {
-            Button(action: {
-                withAnimation {
-                    self.showList.toggle()
-                }
-            }) {
-                Text("Toggle List")
-            }
-
-            if showList {
-                List {
-                    Text("Item 1")
-                    Text("Item 2")
-                    Text("Item 3")
-                }
-                .transition(.move(edge: .leading))
+        TabView {
+            ForEach(Array(views.keys), id: \.self) { key in
+                self.views[key]!
+                    .tabItem {
+                        Image(systemName: "circle")
+                        Text(key)
+                    }
             }
         }
     }
