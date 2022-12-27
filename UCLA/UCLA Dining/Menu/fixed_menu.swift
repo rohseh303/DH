@@ -19,22 +19,22 @@ struct fixed_menu: View {
             VStack {
                 
                 //contains header and menu title
-                ZStack(alignment: .bottomLeading) {
+                //ZStack(alignment: .bottomLeading) {
                     //Color(.gray)
                     //  .ignoresSafeArea(.all)
-                    Text("Menu - " + hall.name)
-                        .font(.system(size:28, weight: .medium, design: .default))
-                        .underline()
-                        .italic()
-                        .foregroundColor(.black)
-                    
-                }
-                .frame(height: 50)
-                .shadow(color: Color.black, radius: 30, x: 0, y: 0)
+                //    Text("Menu - " + hall.name)
+                //        .font(.system(size:28, weight: .medium, design: .default))
+                //        .underline()
+                //        .italic()
+                //        .foregroundColor(.black)
+                //
+                //}
+                //.frame(height: 50)
+                //.shadow(color: Color.black, radius: 30, x: 0, y: 0)
                 
                 VStack{
                     ScrollView(.vertical, showsIndicators: false) {
-                        Image(hall.fixed_menu!)
+                        Image(hall.fixed_menu![0])
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(maxWidth: .infinity)
@@ -48,7 +48,8 @@ struct fixed_menu: View {
                 }
                 Spacer()
             }
-        }
+        }.navigationBarTitle("Menu - " + hall.name)
+        //.navigationBarAppearance(.background(Color("NavBar color")))
     }
 }
 
@@ -57,7 +58,7 @@ struct fixed_menu_Previews: PreviewProvider {
         name: "The Drey",
         dishes: ["default", "preview", "menu"],
         image: "the drey",
-        fixed_menu: "The Drey fixed menu"
+        fixed_menu: ["The Drey fixed menu"]
     )
     
     static var previews: some View {

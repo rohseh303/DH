@@ -98,6 +98,17 @@ struct ContentView: View {
                                 
                                 //Restaurant Buttons
                                 VStack{
+                                    let BruinCafeData = Hall(
+                                        name: "Bruin Cafe",
+                                        dishes: APIoutput["BruinCafe"] ?? [NoData],
+                                        image: "Bruin Cafe"
+                                    )
+                                    
+                                    NavigationLink(
+                                        destination: Menu(hall: BruinCafeData),
+                                        label: {
+                                            FoodIcon(hall: BruinCafeData)
+                                        })
                                     
                                     let EpicuriaAckermanData = Hall(
                                         name: "Epicuria at Ackerman",
@@ -115,7 +126,7 @@ struct ContentView: View {
                                         name: "The Drey",
                                         dishes: APIoutput["Drey"] ?? [NoData],
                                         image: "the drey",
-                                        fixed_menu: "The Drey fixed menu"
+                                        fixed_menu: ["The Drey fixed menu"]
                                     )
                                     
                                     NavigationLink(
@@ -134,18 +145,6 @@ struct ContentView: View {
                                         destination: Menu(hall: RendezvousData),
                                         label: {
                                             FoodIcon(hall: RendezvousData)
-                                        })
-                                    
-                                    let BruinCafeData = Hall(
-                                        name: "Bruin Cafe",
-                                        dishes: APIoutput["BruinCafe"] ?? [NoData],
-                                        image: "Bruin Cafe"
-                                    )
-                                    
-                                    NavigationLink(
-                                        destination: Menu(hall: BruinCafeData),
-                                        label: {
-                                            FoodIcon(hall: BruinCafeData)
                                         })
                                     
                                     let Cafe1919Data = Hall(

@@ -16,18 +16,18 @@ struct Menu: View {
             VStack {
                 
                 //contains header and menu title
-                ZStack(alignment: .bottomLeading) {
-                    //Color(.gray)
-                    //  .ignoresSafeArea(.all)
-                    Text("Menu - " + hall.name)
-                        .font(.system(size:28, weight: .medium, design: .default))
-                        .underline()
-                        .italic()
-                        .foregroundColor(.black)
-                    
-                }
-                .frame(height: 50)
-                .shadow(color: Color.black, radius: 30, x: 0, y: 0)
+                //ZStack(alignment: .bottomLeading) {
+                //Color(.gray)
+                //  .ignoresSafeArea(.all)
+                //Text("Menu - " + hall.name)
+                //    .font(.system(size:28, weight: .medium, design: .default))
+                //    .underline()
+                //    .italic()
+                //    .foregroundColor(.black)
+                
+                //}
+                //.frame(height: 50)
+                //.shadow(color: Color.black, radius: 30, x: 0, y: 0)
                 
                 ScrollView {
                     VStack{
@@ -38,16 +38,16 @@ struct Menu: View {
                                     .foregroundColor(.black)
                             }
                         }
-                            else {
-                                Text("No Data Displayed")
-                                    .font(.title)
-                                    .foregroundColor(.black)
-                            }
+                        else {
+                            Text("No Data Displayed")
+                                .font(.title)
+                                .foregroundColor(.black)
+                        }
                     }
                     Spacer()
                 }
             }
-        }
+        }.navigationBarTitle("Menu - " + hall.name)
     }
 }
 
