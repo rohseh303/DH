@@ -12,21 +12,22 @@ struct fixed_menu: View {
     // Use a scale effect to zoom in and out
     var hall: Hall
     var body: some View {
-        if hall.sections! <= 1 {
-            Fixed_Menu_Section(hall: hall, section_number: 0)
-        }
-        else {
-            TabView {
-                ForEach(0..<hall.sections!, id: \.self) { index in
-                    Fixed_Menu_Section(hall: hall, section_number: index)
-                        .tabItem {
-                            Image(systemName: "circle")
-                            Text(hall.section_names![index])
-                        }
+        ZStack {
+            if hall.sections! <= 1 {
+                Fixed_Menu_Section(hall: hall, section_number: 0)
+            }
+            else {
+                TabView {
+                    ForEach(0..<hall.sections!, id: \.self) { index in
+                        Fixed_Menu_Section(hall: hall, section_number: index)
+                            .tabItem {
+                                Image(systemName: "circle")
+                                Text(hall.section_names![index])
+                            }
+                    }
                 }
             }
-        }
-
+        }.navigationBarTitle("Menu - " + hall.name)
         
         //if hall.fixed_menu!.count > 0 {
         //    ForEach(0..<hall.sections!, id: \.self) { index in
