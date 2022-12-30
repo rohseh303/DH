@@ -3,7 +3,10 @@ import SwiftUI
 
 struct Fixed_Menu_Section: View {
     // Use a scale effect to zoom in and out
-    @State private var scale: CGFloat = 1.0
+    @State private var offset: CGSize = .zero
+    @State private var finalAmount = 1.0
+    @State private var curAmount = 0.0
+    
     var hall: Hall
     var section_number: Int
     var body: some View {
@@ -11,23 +14,25 @@ struct Fixed_Menu_Section: View {
             Color.white
                 .ignoresSafeArea(.all)
             VStack {
-                VStack{
                     ScrollView(.vertical, showsIndicators: false) {
                         Image(hall.fixed_menu![section_number])
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(maxWidth: .infinity)
-                            .scaleEffect(scale)
-                            .gesture(
-                                MagnificationGesture()
-                                    .onChanged { self.scale = $0 }
-                                    .onEnded { _ in self.scale = 1.0 }
-                                )
                         }
-                }
-                Spacer()
+                    .scaleEffect(finalAmount + curAmount)
+                    .gesture(
+                        MagnificationGesture()
+                            .onChanged { amount in
+                                curAmount = amount - 1
+                            }
+                            .onEnded{ amount in
+                                finalAmount += curAmount
+                                curAmount = 0
+                            }
+                    )
             }
-        }.navigationBarTitle("Menu - " + hall.name);
+        }.navigationBarTitle("Menu - " + hall.name)
     }
 }
 
@@ -36,7 +41,8 @@ struct Fixed_Menu_Section_Previews: PreviewProvider {
         name: "The Drey",
         dishes: ["default", "preview", "menu"],
         image: "the drey",
-        fixed_menu: ["The Drey fixed menu 1"]
+        fixed_menu: ["The Drey fixed menu 1"],
+        sections: 1
     )
     
     static var previews: some View {

@@ -7,37 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B59AE1829086FA50015ABAB /* UCLAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE1729086FA50015ABAB /* UCLAApp.swift */; };
-		2B59AE1A29086FA50015ABAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE1929086FA50015ABAB /* ContentView.swift */; };
-		2B59AE1C29086FA90015ABAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B59AE1B29086FA90015ABAB /* Assets.xcassets */; };
-		2B59AE1F29086FA90015ABAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B59AE1E29086FA90015ABAB /* Preview Assets.xcassets */; };
-		2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */; };
-		2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE292908704C0015ABAB /* FoodIcon.swift */; };
-		2B59AE2C290870590015ABAB /* Hall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2B290870590015ABAB /* Hall.swift */; };
-		2B59AE2E290870720015ABAB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2D290870720015ABAB /* Menu.swift */; };
-		2B663DB729563D2E0087AAE6 /* CKWistfulRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */; };
-		2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927529598BF40039AD9E /* fixed_menu.swift */; };
-		2BCE927C295AA1AF0039AD9E /* Fixed_Menu_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */; };
+		2BCE92A6295CDEC50039AD9E /* pinch_zoom_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE92A5295CDEC50039AD9E /* pinch_zoom_testApp.swift */; };
+		2BCE92A8295CDEC50039AD9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE92A7295CDEC50039AD9E /* ContentView.swift */; };
+		2BCE92AA295CDECA0039AD9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE92A9295CDECA0039AD9E /* Assets.xcassets */; };
+		2BCE92AD295CDECA0039AD9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BCE92AC295CDECA0039AD9E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B59AE1429086FA50015ABAB /* UCLA Dining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UCLA Dining.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B59AE1729086FA50015ABAB /* UCLAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCLAApp.swift; sourceTree = "<group>"; };
-		2B59AE1929086FA50015ABAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2B59AE1B29086FA90015ABAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2B59AE1E29086FA90015ABAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimation.swift; sourceTree = "<group>"; };
-		2B59AE292908704C0015ABAB /* FoodIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodIcon.swift; sourceTree = "<group>"; };
-		2B59AE2B290870590015ABAB /* Hall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hall.swift; sourceTree = "<group>"; };
-		2B59AE2D290870720015ABAB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		2B663DB529563C8B0087AAE6 /* UCLA-Dining-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UCLA-Dining-Info.plist"; sourceTree = SOURCE_ROOT; };
-		2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CKWistfulRegular.ttf; sourceTree = "<group>"; };
-		2BCE927529598BF40039AD9E /* fixed_menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fixed_menu.swift; sourceTree = "<group>"; };
-		2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixed_Menu_Section.swift; sourceTree = "<group>"; };
+		2BCE92A2295CDEC50039AD9E /* pinch_zoom_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinch_zoom_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCE92A5295CDEC50039AD9E /* pinch_zoom_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinch_zoom_testApp.swift; sourceTree = "<group>"; };
+		2BCE92A7295CDEC50039AD9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BCE92A9295CDECA0039AD9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BCE92AC295CDECA0039AD9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B59AE1129086FA50015ABAB /* Frameworks */ = {
+		2BCE929F295CDEC50039AD9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,109 +32,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B59AE0B29086FA50015ABAB = {
+		2BCE9299295CDEC50039AD9E = {
 			isa = PBXGroup;
 			children = (
-				2B59AE1629086FA50015ABAB /* UCLA Dining */,
-				2B59AE1529086FA50015ABAB /* Products */,
+				2BCE92A4295CDEC50039AD9E /* pinch_zoom_test */,
+				2BCE92A3295CDEC50039AD9E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2B59AE1529086FA50015ABAB /* Products */ = {
+		2BCE92A3295CDEC50039AD9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B59AE1429086FA50015ABAB /* UCLA Dining.app */,
+				2BCE92A2295CDEC50039AD9E /* pinch_zoom_test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B59AE1629086FA50015ABAB /* UCLA Dining */ = {
+		2BCE92A4295CDEC50039AD9E /* pinch_zoom_test */ = {
 			isa = PBXGroup;
 			children = (
-				2B663DB529563C8B0087AAE6 /* UCLA-Dining-Info.plist */,
-				2B59AE1729086FA50015ABAB /* UCLAApp.swift */,
-				2B59AE1929086FA50015ABAB /* ContentView.swift */,
-				2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */,
-				2B59AE272908702C0015ABAB /* Menu */,
-				2B59AE28290870320015ABAB /* Icons */,
-				2B663DB229563B5B0087AAE6 /* fonts */,
-				2B59AE1B29086FA90015ABAB /* Assets.xcassets */,
-				2B59AE1D29086FA90015ABAB /* Preview Content */,
+				2BCE92A5295CDEC50039AD9E /* pinch_zoom_testApp.swift */,
+				2BCE92A7295CDEC50039AD9E /* ContentView.swift */,
+				2BCE92A9295CDECA0039AD9E /* Assets.xcassets */,
+				2BCE92AB295CDECA0039AD9E /* Preview Content */,
 			);
-			path = "UCLA Dining";
+			path = pinch_zoom_test;
 			sourceTree = "<group>";
 		};
-		2B59AE1D29086FA90015ABAB /* Preview Content */ = {
+		2BCE92AB295CDECA0039AD9E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2B59AE1E29086FA90015ABAB /* Preview Assets.xcassets */,
+				2BCE92AC295CDECA0039AD9E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2B59AE272908702C0015ABAB /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				2B59AE2D290870720015ABAB /* Menu.swift */,
-				2BCE927529598BF40039AD9E /* fixed_menu.swift */,
-				2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
-		2B59AE28290870320015ABAB /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				2B59AE292908704C0015ABAB /* FoodIcon.swift */,
-				2B59AE2B290870590015ABAB /* Hall.swift */,
-			);
-			path = Icons;
-			sourceTree = "<group>";
-		};
-		2B663DB229563B5B0087AAE6 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */,
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B59AE1329086FA50015ABAB /* UCLA Dining */ = {
+		2BCE92A1295CDEC50039AD9E /* pinch_zoom_test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B59AE2229086FA90015ABAB /* Build configuration list for PBXNativeTarget "UCLA Dining" */;
+			buildConfigurationList = 2BCE92B0295CDECA0039AD9E /* Build configuration list for PBXNativeTarget "pinch_zoom_test" */;
 			buildPhases = (
-				2B59AE1029086FA50015ABAB /* Sources */,
-				2B59AE1129086FA50015ABAB /* Frameworks */,
-				2B59AE1229086FA50015ABAB /* Resources */,
+				2BCE929E295CDEC50039AD9E /* Sources */,
+				2BCE929F295CDEC50039AD9E /* Frameworks */,
+				2BCE92A0295CDEC50039AD9E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "UCLA Dining";
-			productName = UCLA;
-			productReference = 2B59AE1429086FA50015ABAB /* UCLA Dining.app */;
+			name = pinch_zoom_test;
+			productName = pinch_zoom_test;
+			productReference = 2BCE92A2295CDEC50039AD9E /* pinch_zoom_test.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2B59AE0C29086FA50015ABAB /* Project object */ = {
+		2BCE929A295CDEC50039AD9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					2B59AE1329086FA50015ABAB = {
-						CreatedOnToolsVersion = 14.0.1;
+					2BCE92A1295CDEC50039AD9E = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 2B59AE0F29086FA50015ABAB /* Build configuration list for PBXProject "UCLA Dining" */;
+			buildConfigurationList = 2BCE929D295CDEC50039AD9E /* Build configuration list for PBXProject "pinch_zoom_test" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,49 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 2B59AE0B29086FA50015ABAB;
-			productRefGroup = 2B59AE1529086FA50015ABAB /* Products */;
+			mainGroup = 2BCE9299295CDEC50039AD9E;
+			productRefGroup = 2BCE92A3295CDEC50039AD9E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B59AE1329086FA50015ABAB /* UCLA Dining */,
+				2BCE92A1295CDEC50039AD9E /* pinch_zoom_test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2B59AE1229086FA50015ABAB /* Resources */ = {
+		2BCE92A0295CDEC50039AD9E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B663DB729563D2E0087AAE6 /* CKWistfulRegular.ttf in Resources */,
-				2B59AE1F29086FA90015ABAB /* Preview Assets.xcassets in Resources */,
-				2B59AE1C29086FA90015ABAB /* Assets.xcassets in Resources */,
+				2BCE92AD295CDECA0039AD9E /* Preview Assets.xcassets in Resources */,
+				2BCE92AA295CDECA0039AD9E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B59AE1029086FA50015ABAB /* Sources */ = {
+		2BCE929E295CDEC50039AD9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B59AE2E290870720015ABAB /* Menu.swift in Sources */,
-				2BCE927C295AA1AF0039AD9E /* Fixed_Menu_Section.swift in Sources */,
-				2B59AE1A29086FA50015ABAB /* ContentView.swift in Sources */,
-				2B59AE2C290870590015ABAB /* Hall.swift in Sources */,
-				2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */,
-				2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */,
-				2B59AE1829086FA50015ABAB /* UCLAApp.swift in Sources */,
-				2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */,
+				2BCE92A8295CDEC50039AD9E /* ContentView.swift in Sources */,
+				2BCE92A6295CDEC50039AD9E /* pinch_zoom_testApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2B59AE2029086FA90015ABAB /* Debug */ = {
+		2BCE92AE295CDECA0039AD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -249,7 +195,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -259,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		2B59AE2129086FA90015ABAB /* Release */ = {
+		2BCE92AF295CDECA0039AD9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -303,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -313,18 +259,17 @@
 			};
 			name = Release;
 		};
-		2B59AE2329086FA90015ABAB /* Debug */ = {
+		2BCE92B1295CDECA0039AD9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UCLA Dining/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"pinch_zoom_test/Preview Content\"";
 				DEVELOPMENT_TEAM = 8HM33Q7CQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UCLA-Dining-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rohansehgal.UCLA;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohansehgal.pinch-zoom-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -343,18 +288,17 @@
 			};
 			name = Debug;
 		};
-		2B59AE2429086FA90015ABAB /* Release */ = {
+		2BCE92B2295CDECA0039AD9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UCLA Dining/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"pinch_zoom_test/Preview Content\"";
 				DEVELOPMENT_TEAM = 8HM33Q7CQ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UCLA-Dining-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -365,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rohansehgal.UCLA;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohansehgal.pinch-zoom-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -376,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B59AE0F29086FA50015ABAB /* Build configuration list for PBXProject "UCLA Dining" */ = {
+		2BCE929D295CDEC50039AD9E /* Build configuration list for PBXProject "pinch_zoom_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B59AE2029086FA90015ABAB /* Debug */,
-				2B59AE2129086FA90015ABAB /* Release */,
+				2BCE92AE295CDECA0039AD9E /* Debug */,
+				2BCE92AF295CDECA0039AD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B59AE2229086FA90015ABAB /* Build configuration list for PBXNativeTarget "UCLA Dining" */ = {
+		2BCE92B0295CDECA0039AD9E /* Build configuration list for PBXNativeTarget "pinch_zoom_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B59AE2329086FA90015ABAB /* Debug */,
-				2B59AE2429086FA90015ABAB /* Release */,
+				2BCE92B1295CDECA0039AD9E /* Debug */,
+				2BCE92B2295CDECA0039AD9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2B59AE0C29086FA50015ABAB /* Project object */;
+	rootObject = 2BCE929A295CDEC50039AD9E /* Project object */;
 }

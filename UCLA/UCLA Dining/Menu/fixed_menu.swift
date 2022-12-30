@@ -17,13 +17,15 @@ struct fixed_menu: View {
                 Fixed_Menu_Section(hall: hall, section_number: 0)
             }
             else {
-                TabView {
-                    ForEach(0..<hall.sections!, id: \.self) { index in
-                        Fixed_Menu_Section(hall: hall, section_number: index)
-                            .tabItem {
-                                Image(systemName: "circle")
-                                Text(hall.section_names![index])
-                            }
+                if hall.fixed_menu != nil {
+                    TabView {
+                        ForEach(0..<hall.sections!, id: \.self) { index in
+                            Fixed_Menu_Section(hall: hall, section_number: index)
+                                .tabItem {
+                                    Image(systemName: "circle")
+                                    Text(hall.section_names![index])
+                                }
+                        }
                     }
                 }
             }
