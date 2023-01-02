@@ -16,6 +16,8 @@
 		2B59AE2C290870590015ABAB /* Hall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2B290870590015ABAB /* Hall.swift */; };
 		2B59AE2E290870720015ABAB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59AE2D290870720015ABAB /* Menu.swift */; };
 		2B663DB729563D2E0087AAE6 /* CKWistfulRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */; };
+		2B6A7C2929639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C2829639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf */; };
+		2B6A7C2B2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C2A2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf */; };
 		2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927529598BF40039AD9E /* fixed_menu.swift */; };
 		2BCE927C295AA1AF0039AD9E /* Fixed_Menu_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		2B59AE2D290870720015ABAB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		2B663DB529563C8B0087AAE6 /* UCLA-Dining-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UCLA-Dining-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CKWistfulRegular.ttf; sourceTree = "<group>"; };
+		2B6A7C2829639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bruin Cafe fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C2A2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bruin Cafe fixed menu 2 pdf.pdf"; sourceTree = "<group>"; };
 		2BCE927529598BF40039AD9E /* fixed_menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fixed_menu.swift; sourceTree = "<group>"; };
 		2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixed_Menu_Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +74,7 @@
 				2B59AE1729086FA50015ABAB /* UCLAApp.swift */,
 				2B59AE1929086FA50015ABAB /* ContentView.swift */,
 				2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */,
+				2B6A7C2329639DF800D977EC /* fixed_menus_pdf */,
 				2B59AE272908702C0015ABAB /* Menu */,
 				2B59AE28290870320015ABAB /* Icons */,
 				2B663DB229563B5B0087AAE6 /* fonts */,
@@ -112,6 +117,15 @@
 				2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		2B6A7C2329639DF800D977EC /* fixed_menus_pdf */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A7C2829639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf */,
+				2B6A7C2A2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf */,
+			);
+			path = fixed_menus_pdf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +188,9 @@
 			files = (
 				2B663DB729563D2E0087AAE6 /* CKWistfulRegular.ttf in Resources */,
 				2B59AE1F29086FA90015ABAB /* Preview Assets.xcassets in Resources */,
+				2B6A7C2929639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf in Resources */,
 				2B59AE1C29086FA90015ABAB /* Assets.xcassets in Resources */,
+				2B6A7C2B2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

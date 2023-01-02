@@ -14,10 +14,8 @@ struct ContentView: View {
     var body: some View {
         let NoData = "No Data displayed"
         
-        NavigationView {
+        NavigationStack {
             ZStack {
-                //LinearGradient(gradient: Gradient(colors:[Color("TopBackground"),Color("BottomBackground")]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                    //.edgesIgnoringSafeArea(.all)
                 Color.white
                     .ignoresSafeArea(.all)
                 //v stack with your ucla dining hall text
@@ -121,11 +119,11 @@ struct ContentView: View {
                                         sections: 1
                                     )
                                     
-                                    NavigationLink(
-                                        destination: fixed_menu(hall: EpicuriaAckermanData),
-                                        label: {
-                                            FoodIcon(hall: EpicuriaAckermanData)
-                                        })
+                                    //NavigationLink(
+                                    //    destination: fixed_menu(hall: EpicuriaAckermanData),
+                                    //    label: {
+                                    //        FoodIcon(hall: EpicuriaAckermanData)
+                                    //    })
                                     
                                     let DreyData = Hall(
                                         name: "The Drey",
@@ -135,11 +133,11 @@ struct ContentView: View {
                                         sections: 1
                                     )
                                     
-                                    NavigationLink(
-                                        destination: fixed_menu(hall: DreyData),
-                                        label: {
-                                            FoodIcon(hall: DreyData)
-                                        })
+                                    //NavigationLink(
+                                    //    destination: fixed_menu(hall: DreyData),
+                                    //    label: {
+                                    //        FoodIcon(hall: DreyData)
+                                    //    })
                                     
                                     let RendezvousData = Hall(
                                         name: "Rendezvous",
@@ -150,11 +148,11 @@ struct ContentView: View {
                                         section_names: ["West", "East", "Boba"]
                                     )
                                     
-                                    NavigationLink(
-                                        destination: fixed_menu(hall: RendezvousData),
-                                        label: {
-                                            FoodIcon(hall: RendezvousData)
-                                        })
+                                    //NavigationLink(
+                                    //    destination: fixed_menu(hall: RendezvousData),
+                                    //    label: {
+                                    //        FoodIcon(hall: RendezvousData)
+                                    //    })
                                     
                                     let Cafe1919Data = Hall(
                                         name: "Cafe 1919",
@@ -162,11 +160,11 @@ struct ContentView: View {
                                         image: "Cafe 1919"
                                     )
                                     
-                                    NavigationLink(
-                                        destination: Menu(hall: Cafe1919Data),
-                                        label: {
-                                            FoodIcon(hall: Cafe1919Data)
-                                        })
+                                    //NavigationLink(
+                                    //    destination: Menu(hall: Cafe1919Data),
+                                    //    label: {
+                                    //        FoodIcon(hall: Cafe1919Data)
+                                    //    })
                                     
                                     let DeNeveLateNightData = Hall(
                                         name: "De Neve Late Night",
@@ -174,11 +172,11 @@ struct ContentView: View {
                                         image: "De Neve Late Night"
                                     )
                                     
-                                    NavigationLink(
-                                        destination: Menu(hall: DeNeveLateNightData),
-                                        label: {
-                                            FoodIcon(hall: DeNeveLateNightData)
-                                        })
+                                    //NavigationLink(
+                                    //    destination: Menu(hall: DeNeveLateNightData),
+                                    //    label: {
+                                    //        FoodIcon(hall: DeNeveLateNightData)
+                                    //    })
                                     
                                     let TheStudyatHedrickData = Hall(
                                         name: "The Study at Hedrick",
@@ -189,11 +187,11 @@ struct ContentView: View {
                                         section_names: ["Cafe Bakery", "Breakfast", "Lunch & Dinner", "Beverages", "Market"]
                                     )
                                     
-                                    NavigationLink(
-                                        destination: fixed_menu(hall: TheStudyatHedrickData),
-                                        label: {
-                                            FoodIcon(hall: TheStudyatHedrickData)
-                                        })
+                                    //NavigationLink(
+                                    //    destination: fixed_menu(hall: TheStudyatHedrickData),
+                                    //    label: {
+                                    //        FoodIcon(hall: TheStudyatHedrickData)
+                                    //    })
                                     
                                     //what is feast at rieber?
                                 }

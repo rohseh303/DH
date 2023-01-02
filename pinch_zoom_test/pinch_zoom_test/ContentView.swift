@@ -5,49 +5,29 @@
 //  Created by Rohan Sehgal on 12/28/22.
 //
 
+
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ContentView: View {
+    @State private var imageSize: CGSize = .zero
+    
     var body: some View {
-     
-     CircleView()
-     
-    }
-}
-
-struct CircleView: View {
-
-@State private var location: CGSize = CGSize()
-@GestureState private var translation: CGSize = CGSize()
-@State private var offset: CGSize = .zero
-@State private var finalAmount = 1.0
-@State private var curAmount = 0.0
-
-    var body: some View {
-     
-     let tapDrag = DragGesture(minimumDistance: 0)
-       .updating($translation) { value, state, _ in
-         state = value.translation
-       }
-       .onEnded { value in
-         location = CGSize(width: location.width + value.translation.width, height: location.height + value.translation.height)
-       }
-       .simultaneously(with:                         MagnificationGesture()
-        .onChanged { amount in
-            curAmount = amount - 1
+        GeometryReader { proxy in
+            WebImage(url: URL(string: "https://images.unsplash.com/photo-1605496036006-fa36378ca4ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"))
+                .resizable()
+                .onSuccess(perform: { image, _, _ in
+                    DispatchQueue.main.async {
+                        self.imageSize = CGSize(width: proxy.size.width, height: proxy.size.height)
+                    }
+                })
+                .indicator(.activity)
+                .scaledToFit()
+                .frame(width: proxy.size.width, height: proxy.size.height)
+                .clipShape(Rectangle())
+                .modifier(ImageModifier(contentSize: imageSize))
+                
         }
-        .onEnded{ amount in
-            finalAmount += curAmount
-            curAmount = 0
-        }
-  )
-     
-     Image("Image")
-       //.fill()
-       .frame(width: 100, height: 100, alignment: .center)
-       .position(x: location.width + translation.width + 100, y: location.height + translation.height + 100)
-       .scaleEffect(finalAmount + curAmount)
-       .gesture(tapDrag)
     }
 }
 

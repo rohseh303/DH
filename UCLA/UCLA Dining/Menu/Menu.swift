@@ -34,8 +34,9 @@ struct Menu: View {
                         if hall.dishes.count > 0 {
                             ForEach(hall.dishes, id: \.self) { dish in
                                 Text(dish)
-                                    .font(.title)
+                                    .font(.headline)
                                     .foregroundColor(.black)
+                                    .fontWeight(.thin)
                             }
                         }
                         else {
