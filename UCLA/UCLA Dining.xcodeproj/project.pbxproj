@@ -18,6 +18,17 @@
 		2B663DB729563D2E0087AAE6 /* CKWistfulRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */; };
 		2B6A7C2929639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C2829639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf */; };
 		2B6A7C2B2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C2A2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf */; };
+		2B6A7C332963F43F00D977EC /* Rendezvous fixed menu 2 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C302963F43F00D977EC /* Rendezvous fixed menu 2 pdf.pdf */; };
+		2B6A7C342963F43F00D977EC /* Rendezvous fixed menu 3 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C312963F43F00D977EC /* Rendezvous fixed menu 3 pdf.pdf */; };
+		2B6A7C382963F59F00D977EC /* Rendezvous fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C372963F59F00D977EC /* Rendezvous fixed menu 1 pdf.pdf */; };
+		2B6A7C3F2963FC0C00D977EC /* Hedrick fixed menu 3 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C3A2963FC0C00D977EC /* Hedrick fixed menu 3 pdf.pdf */; };
+		2B6A7C402963FC0C00D977EC /* Hedrick fixed menu 4 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C3B2963FC0C00D977EC /* Hedrick fixed menu 4 pdf.pdf */; };
+		2B6A7C412963FC0C00D977EC /* Hedrick fixed menu 5 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C3C2963FC0C00D977EC /* Hedrick fixed menu 5 pdf.pdf */; };
+		2B6A7C422963FC0C00D977EC /* Hedrick fixed menu 2 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C3D2963FC0C00D977EC /* Hedrick fixed menu 2 pdf.pdf */; };
+		2B6A7C452963FC6C00D977EC /* Hedrick fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C442963FC6C00D977EC /* Hedrick fixed menu 1 pdf.pdf */; };
+		2B6A7C492963FF2900D977EC /* The Drey fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C482963FF2900D977EC /* The Drey fixed menu 1 pdf.pdf */; };
+		2B6A7C4B2963FFA300D977EC /* Ackerman fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C4A2963FFA300D977EC /* Ackerman fixed menu 1 pdf.pdf */; };
+		2B6A7C4F296400A200D977EC /* De Neve fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C4E296400A200D977EC /* De Neve fixed menu 1 pdf.pdf */; };
 		2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927529598BF40039AD9E /* fixed_menu.swift */; };
 		2BCE927C295AA1AF0039AD9E /* Fixed_Menu_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +47,17 @@
 		2B663DB629563D2E0087AAE6 /* CKWistfulRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CKWistfulRegular.ttf; sourceTree = "<group>"; };
 		2B6A7C2829639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bruin Cafe fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
 		2B6A7C2A2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bruin Cafe fixed menu 2 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C302963F43F00D977EC /* Rendezvous fixed menu 2 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Rendezvous fixed menu 2 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C312963F43F00D977EC /* Rendezvous fixed menu 3 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Rendezvous fixed menu 3 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C372963F59F00D977EC /* Rendezvous fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Rendezvous fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C3A2963FC0C00D977EC /* Hedrick fixed menu 3 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hedrick fixed menu 3 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C3B2963FC0C00D977EC /* Hedrick fixed menu 4 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hedrick fixed menu 4 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C3C2963FC0C00D977EC /* Hedrick fixed menu 5 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hedrick fixed menu 5 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C3D2963FC0C00D977EC /* Hedrick fixed menu 2 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hedrick fixed menu 2 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C442963FC6C00D977EC /* Hedrick fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hedrick fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C482963FF2900D977EC /* The Drey fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Drey fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C4A2963FFA300D977EC /* Ackerman fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ackerman fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
+		2B6A7C4E296400A200D977EC /* De Neve fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "De Neve fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
 		2BCE927529598BF40039AD9E /* fixed_menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fixed_menu.swift; sourceTree = "<group>"; };
 		2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixed_Menu_Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,10 +144,45 @@
 		2B6A7C2329639DF800D977EC /* fixed_menus_pdf */ = {
 			isa = PBXGroup;
 			children = (
+				2B6A7C4E296400A200D977EC /* De Neve fixed menu 1 pdf.pdf */,
+				2B6A7C4A2963FFA300D977EC /* Ackerman fixed menu 1 pdf.pdf */,
+				2B6A7C482963FF2900D977EC /* The Drey fixed menu 1 pdf.pdf */,
+				2B6A7C392963FBFA00D977EC /* Hedrick */,
+				2B6A7C2E2963F41D00D977EC /* Rendezvous */,
+				2B6A7C2C2963F29100D977EC /* Bruin Cafe */,
+			);
+			path = fixed_menus_pdf;
+			sourceTree = "<group>";
+		};
+		2B6A7C2C2963F29100D977EC /* Bruin Cafe */ = {
+			isa = PBXGroup;
+			children = (
 				2B6A7C2829639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf */,
 				2B6A7C2A2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf */,
 			);
-			path = fixed_menus_pdf;
+			path = "Bruin Cafe";
+			sourceTree = "<group>";
+		};
+		2B6A7C2E2963F41D00D977EC /* Rendezvous */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A7C372963F59F00D977EC /* Rendezvous fixed menu 1 pdf.pdf */,
+				2B6A7C302963F43F00D977EC /* Rendezvous fixed menu 2 pdf.pdf */,
+				2B6A7C312963F43F00D977EC /* Rendezvous fixed menu 3 pdf.pdf */,
+			);
+			path = Rendezvous;
+			sourceTree = "<group>";
+		};
+		2B6A7C392963FBFA00D977EC /* Hedrick */ = {
+			isa = PBXGroup;
+			children = (
+				2B6A7C442963FC6C00D977EC /* Hedrick fixed menu 1 pdf.pdf */,
+				2B6A7C3D2963FC0C00D977EC /* Hedrick fixed menu 2 pdf.pdf */,
+				2B6A7C3A2963FC0C00D977EC /* Hedrick fixed menu 3 pdf.pdf */,
+				2B6A7C3B2963FC0C00D977EC /* Hedrick fixed menu 4 pdf.pdf */,
+				2B6A7C3C2963FC0C00D977EC /* Hedrick fixed menu 5 pdf.pdf */,
+			);
+			path = Hedrick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,10 +244,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B663DB729563D2E0087AAE6 /* CKWistfulRegular.ttf in Resources */,
+				2B6A7C4B2963FFA300D977EC /* Ackerman fixed menu 1 pdf.pdf in Resources */,
 				2B59AE1F29086FA90015ABAB /* Preview Assets.xcassets in Resources */,
 				2B6A7C2929639EB200D977EC /* Bruin Cafe fixed menu 1 pdf.pdf in Resources */,
+				2B6A7C452963FC6C00D977EC /* Hedrick fixed menu 1 pdf.pdf in Resources */,
+				2B6A7C422963FC0C00D977EC /* Hedrick fixed menu 2 pdf.pdf in Resources */,
 				2B59AE1C29086FA90015ABAB /* Assets.xcassets in Resources */,
+				2B6A7C3F2963FC0C00D977EC /* Hedrick fixed menu 3 pdf.pdf in Resources */,
+				2B6A7C382963F59F00D977EC /* Rendezvous fixed menu 1 pdf.pdf in Resources */,
 				2B6A7C2B2963A04900D977EC /* Bruin Cafe fixed menu 2 pdf.pdf in Resources */,
+				2B6A7C342963F43F00D977EC /* Rendezvous fixed menu 3 pdf.pdf in Resources */,
+				2B6A7C4F296400A200D977EC /* De Neve fixed menu 1 pdf.pdf in Resources */,
+				2B6A7C492963FF2900D977EC /* The Drey fixed menu 1 pdf.pdf in Resources */,
+				2B6A7C332963F43F00D977EC /* Rendezvous fixed menu 2 pdf.pdf in Resources */,
+				2B6A7C402963FC0C00D977EC /* Hedrick fixed menu 4 pdf.pdf in Resources */,
+				2B6A7C412963FC0C00D977EC /* Hedrick fixed menu 5 pdf.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

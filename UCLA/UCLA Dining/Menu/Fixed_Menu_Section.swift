@@ -24,11 +24,15 @@ struct PDFKitRepresentedView: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
         let pdfView: PDFView = PDFView()
         
-        pdfView.document = PDFDocument(url: self.documentURL)
-        pdfView.autoScales = true
+        pdfView.autoresizesSubviews = true
+        pdfView.autoresizingMask = [.flexibleWidth, .flexibleHeight, .flexibleTopMargin, .flexibleLeftMargin]
         pdfView.displayDirection = .vertical
-        pdfView.minScaleFactor = 0.5
-        pdfView.maxScaleFactor = 5.0
+
+        pdfView.autoScales = true
+        pdfView.displayMode = .singlePageContinuous
+        pdfView.displaysPageBreaks = true
+        pdfView.document = PDFDocument(url: self.documentURL)
+        
         
         return pdfView
     }
