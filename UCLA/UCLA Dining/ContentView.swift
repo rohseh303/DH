@@ -196,7 +196,20 @@ struct ContentView: View {
                                             FoodIcon(hall: TheStudyatHedrickData)
                                         })
                                     
-                                    //what is feast at rieber?
+                                    let SpiceKitchen = Hall(
+                                        name: "The Spice Kitchen",
+                                        dishes: [NoData],
+                                        image: "Spice Kitchen",
+                                        fixed_menu: ["Spice Kitchen fixed menu 1"],
+                                        sections: 1
+                                    )
+                                    
+                                    NavigationLink(
+                                        destination: fixed_menu(hall: SpiceKitchen),
+                                        label: {
+                                            FoodIcon(hall: SpiceKitchen)
+                                        }
+                                    )
                                 }
                             }
                             .padding()
