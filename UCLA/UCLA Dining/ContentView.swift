@@ -12,6 +12,7 @@ struct ContentView: View {
     var APIoutput : [String: [String]]
     
     var body: some View {
+
         let NoData = "No Data displayed"
         
         NavigationStack {
@@ -202,8 +203,8 @@ struct ContentView: View {
                         }
                     }.edgesIgnoringSafeArea(.all)
                 }
-            }
-        }
+            }.colorScheme(.light)
+        }.preferredColorScheme(.light)
     }
 }
 

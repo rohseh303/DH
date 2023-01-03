@@ -30,13 +30,6 @@ struct fixed_menu: View {
                 }
             }
         }.navigationBarTitle("Menu - " + hall.name)
-        
-        //if hall.fixed_menu!.count > 0 {
-        //    ForEach(0..<hall.sections!, id: \.self) { index in
-        //        Fixed_Menu_Section(hall: hall, section_number: index)
-        //    }
-        //}
-        //Fixed_Menu_Section(hall: hall, section_number: 0)
     }
 }
 
