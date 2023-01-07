@@ -1,0 +1,6 @@
+framework module Pods_UCLA_Dining {
+  umbrella header "Pods-UCLA Dining-umbrella.h"
+
+  export *
+  module * { export * }
+}

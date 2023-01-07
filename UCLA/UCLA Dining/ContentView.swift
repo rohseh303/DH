@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct ContentView: View {
+    @State private var bannerView: GADBannerView?
+    
     //passed API output and storing in var
     var APIoutput : [String: [String]]
     
@@ -35,7 +38,7 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
                     .background(Color("NavBar color"))
                     .edgesIgnoringSafeArea(.horizontal)
-
+                    
                     
                     ScrollView {
                         
@@ -215,8 +218,17 @@ struct ContentView: View {
                             .padding()
                         }
                     }.edgesIgnoringSafeArea(.all)
+                    //ZStack {
+                    // Add the banner view at the bottom of the screen.
+                    
+                    //}
                 }
+                //better to insert here that way your don't need that weird nav bottom thingy
             }.colorScheme(.light)
+            ZStack {
+                Text("insert banner here")
+                //BannerAd(unitID: "ca-app-pub-7275807859221897/8994587990")
+            }
         }.preferredColorScheme(.light)
     }
 }
