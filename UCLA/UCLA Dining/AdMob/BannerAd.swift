@@ -24,6 +24,7 @@ struct BannerAd: UIViewRepresentable{
         adView.rootViewController = UIApplication.shared.getRootViewController()
         adView.delegate = context.coordinator
         adView.load(GADRequest())
+        //adView.backgroundColor = UIColor.white
         
         return adView
         
