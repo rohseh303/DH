@@ -51,22 +51,14 @@ struct Fixed_Menu_Section: View {
             Color.white
                 .ignoresSafeArea(.all)
             VStack {
-                let temp = hall.fixed_menu![section_number] + " pdf"
-                let PDFurl = Bundle.main.url(forResource: temp, withExtension: "pdf")!//might need to add ! to unwrap unsure
-                CustomPDFView(displayedPDFURL: PDFurl)
-                
-                //ScrollView(.vertical, showsIndicators: false) {
-                    //VStack {
-                        //Image(hall.fixed_menu![section_number])
-                        //    .resizable()
-                        //    .aspectRatio(contentMode: .fit)
-                        //    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-                        //    .offset(y: offset.height)
-                        //    .position(x: location.width + translation.width + 100, y: location.height + translation.height + 100)
-                         //   .scaleEffect(finalAmount + curAmount)
-                         //   .gesture(tapDrag)
-                    //}
-                //}
+                VStack {
+                    let temp = hall.fixed_menu![section_number] + " pdf"
+                    let PDFurl = Bundle.main.url(forResource: temp, withExtension: "pdf")!//might need to add ! to unwrap unsure
+                    CustomPDFView(displayedPDFURL: PDFurl)
+                }
+                VStack {
+                    BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716")
+                }.frame(height: 45)
             }.navigationBarTitle("Menu - " + hall.name)
         }
     }

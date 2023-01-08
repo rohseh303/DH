@@ -14,39 +14,28 @@ struct Menu: View {
             Color.white
                 .ignoresSafeArea(.all)
             VStack {
-                
-                //contains header and menu title
-                //ZStack(alignment: .bottomLeading) {
-                //Color(.gray)
-                //  .ignoresSafeArea(.all)
-                //Text("Menu - " + hall.name)
-                //    .font(.system(size:28, weight: .medium, design: .default))
-                //    .underline()
-                //    .italic()
-                //    .foregroundColor(.black)
-                
-                //}
-                //.frame(height: 50)
-                //.shadow(color: Color.black, radius: 30, x: 0, y: 0)
-                
-                ScrollView {
-                    VStack{
-                        if hall.dishes.count > 0 {
-                            ForEach(hall.dishes, id: \.self) { dish in
-                                Text(dish)
-                                    .font(.headline)
+                VStack {
+                    ScrollView {
+                        VStack{
+                            if hall.dishes.count > 0 {
+                                ForEach(hall.dishes, id: \.self) { dish in
+                                    Text(dish)
+                                        .font(.headline)
+                                        .foregroundColor(.black)
+                                        .fontWeight(.thin)
+                                }
+                            }
+                            else {
+                                Text("No Data Displayed")
+                                    .font(.title)
                                     .foregroundColor(.black)
-                                    .fontWeight(.thin)
                             }
                         }
-                        else {
-                            Text("No Data Displayed")
-                                .font(.title)
-                                .foregroundColor(.black)
-                        }
                     }
-                    Spacer()
                 }
+                VStack(alignment: .trailing) {
+                        BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716")
+                }.frame(height: 45)
             }
         }.navigationBarTitle("Menu - " + hall.name)
     }

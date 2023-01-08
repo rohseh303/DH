@@ -13,22 +13,22 @@ struct fixed_menu: View {
     var hall: Hall
     var body: some View {
         ZStack {
-            if hall.sections! <= 1 {
-                Fixed_Menu_Section(hall: hall, section_number: 0)
-            }
-            else {
-                if hall.fixed_menu != nil {
-                    TabView {
-                        ForEach(0..<hall.sections!, id: \.self) { index in
-                            Fixed_Menu_Section(hall: hall, section_number: index)
-                                .tabItem {
-                                    Image(systemName: "circle")
-                                    Text(hall.section_names![index])
-                                }
+                if hall.sections! <= 1 {
+                    Fixed_Menu_Section(hall: hall, section_number: 0)
+                }
+                else {
+                    if hall.fixed_menu != nil {
+                        TabView {
+                            ForEach(0..<hall.sections!, id: \.self) { index in
+                                Fixed_Menu_Section(hall: hall, section_number: index)
+                                    .tabItem {
+                                        Image(systemName: "circle")
+                                        Text(hall.section_names![index])
+                                    }
+                            }
                         }
                     }
                 }
-            }
         }.navigationBarTitle("Menu - " + hall.name)
     }
 }

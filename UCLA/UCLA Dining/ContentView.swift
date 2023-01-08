@@ -226,10 +226,10 @@ struct ContentView: View {
                 }
                 //better to insert here that way your don't need that weird nav bottom thingy
             }.colorScheme(.light)
-            ZStack {
+            //ZStack {
                 //Text("insert banner here")
-                BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716")
-            }.frame(height:45)
+            //    BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716")
+            //}.frame(height:45)
         }.preferredColorScheme(.light)
     }
 }
