@@ -1,15 +1,15 @@
 //
 //  BannerAd.swift
-//  GoogleAds
+//  UCLA Dining
 //
-//  Created by Eduardo Martin Lorenzo on 16/6/22.
+//  Created by Rohan Sehgal on 1/7/23.
 //
 
-import SwiftUI
 import GoogleMobileAds
+import SwiftUI
 
-// El banner de Google esta hecho en UIKit, por eso el UIViewRepresentable
-struct BannerAd: UIViewRepresentable {
+struct BannerAd: UIViewRepresentable{
+    
     var unitID: String
     
     func makeCoordinator() -> Coordinator {
@@ -17,6 +17,7 @@ struct BannerAd: UIViewRepresentable {
     }
     
     func makeUIView(context: Context) -> GADBannerView {
+        
         let adView = GADBannerView(adSize: GADAdSizeBanner)
         
         adView.adUnitID = unitID
@@ -25,13 +26,14 @@ struct BannerAd: UIViewRepresentable {
         adView.load(GADRequest())
         
         return adView
-    }
-    
-    func updateUIView(_ uiView: GADBannerView, context: Context) {
         
     }
     
-     class Coordinator: NSObject, GADBannerViewDelegate {
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        
+    }
+    
+    class Coordinator: NSObject, GADBannerViewDelegate {
         func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
           print("bannerViewDidReceiveAd")
         }
@@ -55,18 +57,18 @@ struct BannerAd: UIViewRepresentable {
         func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
           print("bannerViewDidDismissScreen")
         }
+
     }
-    
 }
 
-// Hay que hacer una extension de la app para obtener el RootView
-extension UIApplication {
-    func getRootViewController() -> UIViewController {
-        guard let screen = self.connectedScenes.first as? UIWindowScene else {
+extension UIApplication{
+    func getRootViewController()->UIViewController{
+        
+        guard let screen = self.connectedScenes.first as? UIWindowScene else{
             return .init()
         }
         
-        guard let root = screen.windows.first?.rootViewController else {
+        guard let root = screen.windows.first?.rootViewController else{
             return .init()
         }
         
