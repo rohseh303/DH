@@ -1,11 +1,12 @@
 import urllib.request
 import requests
 from bs4 import BeautifulSoup
+import json
 import boto3
 
 def lambda_handler(event, context):
     # Set up a connection to S3
-    s3 = boto.client('s3')
+    s3 = boto3.client('s3')
 
     restaurants = ['Epicuria', 'DeNeve', 'BruinPlate']
     mealtimes = ['Breakfast','Lunch','Dinner']
@@ -52,7 +53,11 @@ def lambda_handler(event, context):
     #return AllDiningHalls
 
     # Set the name of the S3 bucket and the key for the object
-    bucket_name = "dining_menus"
-    key_name = 
+    bucket_name = "diningmenus"
+    key_name = "data.json"
 
-    # Store the data in the S3 bucket
+    # Convert the dictionary to a JSON string
+    json_data = json.dumps(AllDiningHalls)
+
+    # Store the JSON string in the S3 bucket
+    s3.put_object(Bucket=bucket_name, Key=key_name, Body=json_data)
