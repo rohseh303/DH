@@ -61,3 +61,6 @@ def lambda_handler(event, context):
 
     # Store the JSON string in the S3 bucket
     s3.put_object(Bucket=bucket_name, Key=key_name, Body=json_data)
+
+    # Empty return statement
+    return "Now go check your S3 bucket"
