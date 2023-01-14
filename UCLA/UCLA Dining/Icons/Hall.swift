@@ -9,7 +9,7 @@ import Foundation
 
 struct Hall {
     var name: String
-    var dishes: [String]
+    var dishes: [String : [String]]?
     var image: String
     var fixed_menu: [String]?
     var sections: Int?

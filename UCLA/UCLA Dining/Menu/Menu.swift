@@ -13,30 +13,36 @@ struct Menu: View {
         ZStack{
             Color.white
                 .ignoresSafeArea(.all)
-            VStack {
-                VStack {
-                    ScrollView {
-                        VStack{
-                            if hall.dishes.count > 0 {
-                                ForEach(hall.dishes, id: \.self) { dish in
-                                    Text(dish)
-                                        .font(.headline)
-                                        .foregroundColor(.black)
-                                        .fontWeight(.thin)
-                                }
-                            }
-                            else {
-                                Text("No Data Displayed")
-                                    .font(.title)
-                                    .foregroundColor(.black)
+                    //ScrollView {
+                    VStack{
+                        if hall.dishes!.count > 0 {
+                            let error = ["something", "went", "wrong"]
+                            
+                            TabView {
+                                //ForEach(0..<hall.dishes!.count, id: \.self) { index in
+                                Menu_Section(arr: hall.dishes!["Breakfast"] ?? error)
+                                    .tabItem {
+                                        Image(systemName: "circle")
+                                        Text("Breakfast")
+                                    }
+                                Menu_Section(arr: hall.dishes!["Lunch"] ?? error)
+                                    .tabItem {
+                                        Image(systemName: "circle")
+                                        Text("Lunch")
+                                    }
+                                Menu_Section(arr: hall.dishes!["Dinner"] ?? error)
+                                    .tabItem {
+                                        Image(systemName: "circle")
+                                        Text("Dinner")
+                                    }
                             }
                         }
+                        else {
+                            Text("No Data Displayed")
+                                .font(.title)
+                                .foregroundColor(.black)
+                        }
                     }
-                }
-                VStack(alignment: .trailing) {
-                    BannerAd(unitID: "ca-app-pub-7275807859221897/8994587990")
-                }.frame(height: 45)
-            }
         }.navigationBarTitle("Menu - " + hall.name)
     }
 }
@@ -44,7 +50,7 @@ struct Menu: View {
 struct Menu_Previews: PreviewProvider {
     static let HallPreview = Hall(
         name: "sample dining hall",
-        dishes: ["default", "preview", "menu"],
+        dishes: ["Breakfast" : ["eggs", "ham", "cereal"], "Lunch" : ["Sandwhich", "Pasta", "Burrito"], "Dinner" : ["Nachos", "Soup", "Chicken"]],
         image: "Epicuria at Covel"
     )
     

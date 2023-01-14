@@ -31,6 +31,7 @@
 		2B6A7C4F296400A200D977EC /* De Neve fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C4E296400A200D977EC /* De Neve fixed menu 1 pdf.pdf */; };
 		2B6A7C512964EC0200D977EC /* Spice Kitchen fixed menu 1 pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6A7C502964EC0200D977EC /* Spice Kitchen fixed menu 1 pdf.pdf */; };
 		2B6A7C56296A40E200D977EC /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A7C55296A40E200D977EC /* BannerAd.swift */; };
+		2B9C9822297240BF00565E75 /* Menu_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C9821297240BF00565E75 /* Menu_Section.swift */; };
 		2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927529598BF40039AD9E /* fixed_menu.swift */; };
 		2BCE927C295AA1AF0039AD9E /* Fixed_Menu_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */; };
 		9D187C9F6AB25B1597D57A88 /* Pods_UCLA_Dining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAA17914E9EC07124D314FC /* Pods_UCLA_Dining.framework */; };
@@ -64,6 +65,7 @@
 		2B6A7C4E296400A200D977EC /* De Neve fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "De Neve fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
 		2B6A7C502964EC0200D977EC /* Spice Kitchen fixed menu 1 pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Spice Kitchen fixed menu 1 pdf.pdf"; sourceTree = "<group>"; };
 		2B6A7C55296A40E200D977EC /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		2B9C9821297240BF00565E75 /* Menu_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_Section.swift; sourceTree = "<group>"; };
 		2BCE927529598BF40039AD9E /* fixed_menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fixed_menu.swift; sourceTree = "<group>"; };
 		2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixed_Menu_Section.swift; sourceTree = "<group>"; };
 		9FAA17914E9EC07124D314FC /* Pods_UCLA_Dining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCLA_Dining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2B59AE2D290870720015ABAB /* Menu.swift */,
+				2B9C9821297240BF00565E75 /* Menu_Section.swift */,
 				2BCE927529598BF40039AD9E /* fixed_menu.swift */,
 				2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */,
 			);
@@ -358,6 +361,7 @@
 				2B59AE2C290870590015ABAB /* Hall.swift in Sources */,
 				2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */,
 				2B6A7C56296A40E200D977EC /* BannerAd.swift in Sources */,
+				2B9C9822297240BF00565E75 /* Menu_Section.swift in Sources */,
 				2B59AE2A2908704C0015ABAB /* FoodIcon.swift in Sources */,
 				2B59AE1829086FA50015ABAB /* UCLAApp.swift in Sources */,
 				2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */,

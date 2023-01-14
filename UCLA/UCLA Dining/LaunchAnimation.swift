@@ -17,7 +17,7 @@ struct LaunchAnimation: View {
     @State private var opacity = 0.5
     
     //for storing API call output
-    @State private var result: [String: [String]]?
+    @State private var result: [String: [String : [String]]]?
     
     var body: some View {
         if result != nil {
@@ -57,16 +57,16 @@ struct LaunchAnimation: View {
         }
     }
     
-    func makePostRequest(completion: @escaping (Result<[String: [String]], Error>) -> Void) {
+    func makePostRequest(completion: @escaping (Result<[String: [String : [String]]], Error>) -> Void) {
         print("calling API...")
-        let url = URL(string: "https://i5bka3jah1.execute-api.us-west-1.amazonaws.com/prod")!
+        let url = URL(string: "https://49jmxvbvc9.execute-api.us-west-1.amazonaws.com/v2/diningmenus")!
 
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
-        let parameters = ["key": "value"]
-        request.httpBody = try! JSONSerialization.data(withJSONObject: parameters)
+        //let parameters = ["key": "value"]
+        //request.httpBody = try! JSONSerialization.data(withJSONObject: parameters)
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
@@ -83,10 +83,10 @@ struct LaunchAnimation: View {
                             return
                         }
                         
-                        var result: [String: [String]] = [:]
+                        var result: [String: [String : [String]]] = [:]
                         for (key, value) in dictionary {
                             //alter code here to make output for dict of dicts
-                            if let array = value as? [String] {
+                            if let array = value as? [String : [String]] {
                                 result[key] = array
                             } else {
                                 completion(.failure(APIError.invalidResponse))

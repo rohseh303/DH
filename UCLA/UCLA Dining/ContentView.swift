@@ -12,11 +12,11 @@ struct ContentView: View {
     @State private var bannerView: GADBannerView?
     
     //passed API output and storing in var
-    var APIoutput : [String: [String]]
+    var APIoutput : [String: [String : [String] ]]
     
     var body: some View {
 
-        let NoData = "No Data displayed"
+        let NoData = ["No Data displayed" : ["Nothing to show"]]
         
         NavigationStack {
             ZStack {
@@ -50,20 +50,20 @@ struct ContentView: View {
                                     
                                     let EpicuriaData = Hall(
                                         name: "Epicuria at Covel",
-                                        dishes: APIoutput["Epicuria"] ?? [NoData],
+                                        dishes: APIoutput["Epicuria"] ?? NoData,
                                         image: "Epicuria at Covel"
                                     )
                                     
                                     let DeNeveData = Hall(
                                         name: "De Neve",
-                                        dishes: APIoutput["DeNeve"] ?? [NoData],
+                                        dishes: APIoutput["DeNeve"] ?? NoData,
                                         image: "De Neve Dining"
                                     )
                                     
                                     let BruinPlateData = Hall(
                                         name: "Bruin Plate",
                                         //change back to BruinPlate after testing
-                                        dishes: APIoutput["BruinPlate"] ?? [NoData],
+                                        dishes: APIoutput["BruinPlate"] ?? NoData,
                                         image: "Bruin Plate Dining"
                                     )
                                     
@@ -103,7 +103,7 @@ struct ContentView: View {
                                 VStack{
                                     let BruinCafeData = Hall(
                                         name: "Bruin Cafe",
-                                        dishes: APIoutput["BruinCafe"] ?? [NoData],
+                                        //dishes: APIoutput["BruinCafe"] ?? [NoData],
                                         image: "Bruin Cafe",
                                         fixed_menu: ["Bruin Cafe fixed menu 1", "Bruin Cafe fixed menu 2"],
                                         sections: 2,
@@ -118,7 +118,7 @@ struct ContentView: View {
                                     
                                     let EpicuriaAckermanData = Hall(
                                         name: "Epicuria at Ackerman",
-                                        dishes: APIoutput["EpicAtAckerman"] ?? [NoData],
+                                        //dishes: APIoutput["EpicAtAckerman"] ?? [NoData],
                                         image: "Epicuria at Ackerman",
                                         fixed_menu: ["Ackerman fixed menu 1"],
                                         sections: 1
@@ -132,7 +132,7 @@ struct ContentView: View {
                                     
                                     let DreyData = Hall(
                                         name: "The Drey",
-                                        dishes: APIoutput["Drey"] ?? [NoData],
+                                        //dishes: APIoutput["Drey"] ?? [NoData],
                                         image: "the drey",
                                         fixed_menu: ["The Drey fixed menu 1"],
                                         sections: 1
@@ -146,7 +146,7 @@ struct ContentView: View {
                                     
                                     let RendezvousData = Hall(
                                         name: "Rendezvous",
-                                        dishes: APIoutput["Rendezvous"] ?? [NoData],
+                                        //dishes: APIoutput["Rendezvous"] ?? [NoData],
                                         image: "Rendezvous",
                                         fixed_menu: ["Rendezvous fixed menu 1", "Rendezvous fixed menu 2", "Rendezvous fixed menu 3"],
                                         sections: 3,
@@ -173,7 +173,7 @@ struct ContentView: View {
                                     
                                     let DeNeveLateNightData = Hall(
                                         name: "De Neve Late Night",
-                                        dishes: APIoutput["DeNeveLateNight"] ?? [NoData],
+                                        //dishes: APIoutput["DeNeveLateNight"] ?? [NoData],
                                         image: "De Neve Late Night",
                                         fixed_menu: ["De Neve fixed menu 1"],
                                         sections: 1
@@ -187,7 +187,7 @@ struct ContentView: View {
                                     
                                     let TheStudyatHedrickData = Hall(
                                         name: "The Study at Hedrick",
-                                        dishes: APIoutput["HedrickStudy"] ?? [NoData],
+                                        //dishes: APIoutput["HedrickStudy"] ?? [NoData],
                                         image: "The Study at Hedrick",
                                         fixed_menu: ["Hedrick fixed menu 1", "Hedrick fixed menu 2", "Hedrick fixed menu 3", "Hedrick fixed menu 4", "Hedrick fixed menu 5"],
                                         sections: 5,
@@ -202,7 +202,7 @@ struct ContentView: View {
                                     
                                     let SpiceKitchen = Hall(
                                         name: "The Spice Kitchen",
-                                        dishes: [NoData],
+                                        //dishes: [NoData],
                                         image: "Spice Kitchen",
                                         fixed_menu: ["Spice Kitchen fixed menu 1"],
                                         sections: 1
@@ -235,7 +235,7 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static let APIpreview = ["this" : ["is", "a", "preview"]]
+    static let APIpreview = ["this" : ["is" : ["something"]]]
     
     static var previews: some View {
         // 5. Use the right SecondView initializator
