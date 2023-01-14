@@ -85,6 +85,7 @@ struct LaunchAnimation: View {
                         
                         var result: [String: [String]] = [:]
                         for (key, value) in dictionary {
+                            //alter code here to make output for dict of dicts
                             if let array = value as? [String] {
                                 result[key] = array
                             } else {

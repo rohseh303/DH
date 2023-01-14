@@ -34,7 +34,7 @@ struct Menu: View {
                     }
                 }
                 VStack(alignment: .trailing) {
-                    BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716")
+                    BannerAd(unitID: "ca-app-pub-7275807859221897/8994587990")
                 }.frame(height: 45)
             }
         }.navigationBarTitle("Menu - " + hall.name)
