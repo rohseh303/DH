@@ -44,9 +44,30 @@ struct Menu: View {
                                 .foregroundColor(.black)
                         }
                     }
-        }.navigationBarTitle("Menu - " + hall.name)
+        }.navigationTitle(hall.name)
+            .toolbarBackground(
+                Color("NavBar color"),
+                for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
     }
 }
+
+struct NavigationConfigurator: UIViewControllerRepresentable {
+    
+    var configure: (UINavigationController) -> Void = { _ in }
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
+        UIViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<NavigationConfigurator>) {
+        if let nc = uiViewController.navigationController {
+            self.configure(nc)
+        }
+    }
+    
+}
+
 
 struct Menu_Previews: PreviewProvider {
     static let HallPreview = Hall(

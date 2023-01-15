@@ -29,7 +29,11 @@ struct fixed_menu: View {
                         }
                     }
                 }
-        }.navigationBarTitle("Menu - " + hall.name)
+        }.navigationBarTitle(hall.name)
+            .toolbarBackground(
+                Color("NavBar color"),
+                for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
