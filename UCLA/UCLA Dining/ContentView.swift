@@ -57,14 +57,14 @@ struct ContentView: View {
                                     let DeNeveData = Hall(
                                         name: "De Neve",
                                         dishes: APIoutput["DeNeve"] ?? NoData,
-                                        image: "De Neve Dining"
+                                        image: "De Neve"
                                     )
                                     
                                     let BruinPlateData = Hall(
                                         name: "Bruin Plate",
                                         //change back to BruinPlate after testing
                                         dishes: APIoutput["BruinPlate"] ?? NoData,
-                                        image: "Bruin Plate Dining"
+                                        image: "Bruin Plate"
                                     )
                                     
                                     //Spacer()
@@ -203,7 +203,7 @@ struct ContentView: View {
                                     let SpiceKitchen = Hall(
                                         name: "The Spice Kitchen",
                                         //dishes: [NoData],
-                                        image: "Spice Kitchen",
+                                        image: "The Spice Kitchen",
                                         fixed_menu: ["Spice Kitchen fixed menu 1"],
                                         sections: 1
                                     )

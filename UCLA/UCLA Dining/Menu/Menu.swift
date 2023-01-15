@@ -18,6 +18,7 @@ struct Menu: View {
                         if hall.dishes!.count > 0 {
                             let error = ["something", "went", "wrong"]
                             
+                            //Add ForEach that will iterate through the individual Hall's mealtimes and display as Text for .tabItem
                             TabView {
                                 //ForEach(0..<hall.dishes!.count, id: \.self) { index in
                                 Menu_Section(arr: hall.dishes!["Breakfast"] ?? error)
