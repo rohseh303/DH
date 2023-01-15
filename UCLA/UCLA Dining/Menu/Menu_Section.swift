@@ -18,7 +18,7 @@ struct Menu_Section: View {
                     if arr.count > 0 {
                         ScrollView {
                             ForEach(arr, id: \.self) { dish in
-                                Text(dish)
+                                Text(dish.replacingOccurrences(of: "&amp;", with: "&"))
                                     .font(.headline)
                                     .foregroundColor(.black)
                                     .fontWeight(.thin)
