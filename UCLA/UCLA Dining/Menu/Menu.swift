@@ -21,21 +21,17 @@ struct Menu: View {
                             //Add ForEach that will iterate through the individual Hall's mealtimes and display as Text for .tabItem
                             TabView {
                                 //ForEach(0..<hall.dishes!.count, id: \.self) { index in
-                                Menu_Section(arr: hall.dishes!["Breakfast"] ?? error)
-                                    .tabItem {
-                                        Image(systemName: "circle")
-                                        Text("Breakfast")
+                                let meals = ["Breakfast", "Brunch", "Lunch", "Dinner", "Late Night"]
+                                ForEach(0..<meals.count, id: \.self) {index in
+                                    if hall.dishes!.keys.contains(meals[index]){
+                                        Menu_Section(arr: hall.dishes![meals[index]] ?? error)
+                                            .tabItem {
+                                                Image(systemName: "circle")
+                                                Text(meals[index])
+                                            }
                                     }
-                                Menu_Section(arr: hall.dishes!["Lunch"] ?? error)
-                                    .tabItem {
-                                        Image(systemName: "circle")
-                                        Text("Lunch")
-                                    }
-                                Menu_Section(arr: hall.dishes!["Dinner"] ?? error)
-                                    .tabItem {
-                                        Image(systemName: "circle")
-                                        Text("Dinner")
-                                    }
+                                    
+                                }
                             }
                         }
                         else {
@@ -72,7 +68,7 @@ struct NavigationConfigurator: UIViewControllerRepresentable {
 struct Menu_Previews: PreviewProvider {
     static let HallPreview = Hall(
         name: "sample dining hall",
-        dishes: ["Breakfast" : ["eggs", "ham", "cereal"], "Lunch" : ["Sandwhich", "Pasta", "Burrito"], "Dinner" : ["Nachos", "Soup", "Chicken"]],
+        dishes: ["Breakfast" : ["eggs", "ham", "cereal"], "Lunch" : ["Sandwhich", "Pasta", "Burrito"], "Dinner" : ["Nachos", "Soup", "Chicken"], "Brunch" : []],
         image: "Epicuria at Covel"
     )
     
