@@ -7,5 +7,5 @@ target 'UCLA Dining' do
 
   # Pods for UCLA Dining
   pod 'Google-Mobile-Ads-SDK'
-
+  
 end
