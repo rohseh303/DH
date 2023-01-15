@@ -29,7 +29,7 @@ struct ContentView: View {
                         Image("UCLA designer text")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: 44)
+                            .frame(height: 40)
                         Text("Dining")
                             .font(.system(size: 32))
                             .foregroundColor(.black)
@@ -219,13 +219,8 @@ struct ContentView: View {
                             .padding()
                         }
                     }.edgesIgnoringSafeArea(.all)
-                    //ZStack {
-                    // Add the banner view at the bottom of the screen.
-                    
-                    //}
                 }
-                //better to insert here that way your don't need that weird nav bottom thingy
-            }.colorScheme(.light)
+            }
         }.preferredColorScheme(.light)
 
     }

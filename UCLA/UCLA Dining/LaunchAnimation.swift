@@ -13,6 +13,7 @@ enum APIError: Error {
 }
 
 struct LaunchAnimation: View {
+    @State var isActive = false
     @State private var size = 0.8
     @State private var opacity = 0.5
     
@@ -20,7 +21,7 @@ struct LaunchAnimation: View {
     @State private var result: [String: [String : [String]]]?
     
     var body: some View {
-        if result != nil {
+        if result != nil && isActive {
             ContentView(APIoutput : result!)
         }
         else {
@@ -44,6 +45,12 @@ struct LaunchAnimation: View {
                     }
                 }
                 .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                            withAnimation{
+                                                self.isActive=true
+                                            }
+                                        }
+                    
                     makePostRequest { result in
                         switch result {
                         case .success(let dictionary):
