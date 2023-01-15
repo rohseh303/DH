@@ -19,9 +19,10 @@ struct Menu_Section: View {
                         ScrollView {
                             ForEach(arr, id: \.self) { dish in
                                 Text(dish.replacingOccurrences(of: "&amp;", with: "&"))
-                                    .font(.headline)
+                                    .font(.system(size: 20))
                                     .foregroundColor(.black)
-                                    .fontWeight(.thin)
+                                    .padding(EdgeInsets(top: 10, leading: 30, bottom: 5, trailing: 0))
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                             }
                         }
                     }
