@@ -40,8 +40,8 @@ struct Menu: View {
                         }
                         else {
                             Text("No Data Displayed")
-                                .font(.title)
-                                .foregroundColor(.black)
+                                .font(.system(size: 45, weight: .bold, design: .default))
+                                .foregroundColor(.gray)
                         }
                     }
         }.navigationTitle(hall.name)

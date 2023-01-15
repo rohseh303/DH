@@ -26,7 +26,11 @@ struct Menu_Section: View {
                         }
                     }
                     else {
+                        Spacer()
                         Text("No data displayed")
+                            .font(.system(size: 45, weight: .bold, design: .default))
+                            .foregroundColor(.gray)
+                        Spacer()
                     }
                 }
                 Spacer()
