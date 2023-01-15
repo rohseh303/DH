@@ -227,7 +227,28 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static let APIpreview = ["this" : ["is" : ["something"]]]
+    static let APIpreview = [
+                             "Epicuria" :
+                                [
+                                    "Breakfast" : ["eggs", "bacon", "cheese"],
+                                    "Lunch" : ["sandwhich", "burgers", "fries"],
+                                    "Dinner" : ["nachos", "pasta", "soda"]
+                                 ],
+                             
+                             "DeNeve" :
+                                [
+                                    "Breakfast" : ["cereal", "oatmeal", "eggs"],
+                                    "Lunch" : ["Noodles", "Chicken", "Bistro"],
+                                    "Dinner" : ["Tenders", "Salad", "Tomatoe Soup"]
+                                ],
+                             
+                             "BruinPlate" :
+                                [
+                                    "Breakfast" : ["Bread", "Coffee", "Fruits"],
+                                    "Lunch" : ["Falafels", "Pizza", "French Fries"],
+                                    "Dinner" : ["Tacos", "Quesadillas", "Chicken Tikka"]
+                                ]
+                            ]
     
     static var previews: some View {
         // 5. Use the right SecondView initializator
