@@ -21,72 +21,66 @@ struct LaunchAnimation: View {
     @State private var result: [String: [String : [String]]]?
     
     //for retrieving school name
-    @State private var selected: String?
+    @State private var isPresented: Bool = false
+    @State private var selectedKey: String? = UserDefaults.standard.string(forKey: "selectedKey")
     
     var body: some View {
-        // before you go into this if else, check if a private var (which you need to create) that store the UserDefault school entry value is filled or not
-        //if that statement is false go into another view (going to be created by Austin, that will set that the variable to someting)
-        
-        //and then proceed (the else branch) to here
-        
-        //might have to implement and fix the current navigation stack for this to work because i don't know how to pop out of the view once the variable is selected and how to save it to the var
-        //could use a function to check if the private var is nil and get it
-        
-        //once you build that successfully, you've the var filled and what it should be is what is needed to fill the end of the link
-        //so in the school selector view, there should be some dictionary so we can map the name of the university to the url var needed to add on to the aws api
-        NavigationStack {
-            if selected == nil {
-                SchoolSelector(selected: $selected)
+        if selectedKey != nil {
+            if result != nil && isActive {
+                ContentView(APIoutput : result!)
             }
             else {
-                if result != nil && isActive {
-                    ContentView(APIoutput : result!)
-                }
-                else {
-                    ZStack {
-                        Color(.black)
-                            .ignoresSafeArea(.all)
+                ZStack {
+                    Color(.black)
+                        .ignoresSafeArea(.all)
+                    VStack{
                         VStack{
-                            VStack{
-                                Image("LaunchScreenImage")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 100, height: 100)
-                            }
-                            .scaleEffect(size)
-                            .opacity(opacity)
-                            .onAppear{
-                                withAnimation(.easeIn(duration: 1.2)) {
-                                    self.size = 0.9
-                                    self.opacity = 1.0
-                                }
+                            Image("LaunchScreenImage")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 100, height: 100)
+                        }
+                        .scaleEffect(size)
+                        .opacity(opacity)
+                        .onAppear{
+                            withAnimation(.easeIn(duration: 1.2)) {
+                                self.size = 0.9
+                                self.opacity = 1.0
                             }
                         }
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                                withAnimation{
-                                    self.isActive=true
-                                }
+                    }
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                            withAnimation{
+                                self.isActive=true
                             }
-                            
-                            makePostRequest { result in
-                                switch result {
-                                case .success(let dictionary):
-                                    self.result = dictionary
-                                case .failure(let error):
-                                    print(error)
-                                }
+                        }
+                        
+                        makePostRequest { result in
+                            switch result {
+                            case .success(let dictionary):
+                                self.result = dictionary
+                            case .failure(let error):
+                                print(error)
                             }
                         }
                     }
                 }
             }
         }
+        else {
+            Button("Select Key") {
+                self.isPresented = true
+            }
+            .sheet(isPresented: $isPresented) {
+                FillInView(selectedKey: self.$selectedKey)
+            }
+        }
     }
     
     func makePostRequest(completion: @escaping (Result<[String: [String : [String]]], Error>) -> Void) {
-        print("calling API..." + selected!)
-        let complete_api = "https://49jmxvbvc9.execute-api.us-west-1.amazonaws.com/v2/" + selected!
+        print("calling API..." + selectedKey!)
+        let complete_api = "https://49jmxvbvc9.execute-api.us-west-1.amazonaws.com/v2/" + selectedKey!
         let url = URL(string: complete_api)!
 
         var request = URLRequest(url: url)
