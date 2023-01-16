@@ -8,36 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selected: String?
-
+    @State private var isPresented: Bool = false
+    @State private var selectedKey: String? = UserDefaults.standard.string(forKey: "selectedKey")
     var body: some View {
-        NavigationView {
-            if selected == nil {
-                NavigationLink(destination: FillInView(selected: $selected)) {
-                    Text("Please fill in the variable")
-                }
+        VStack {
+            if selectedKey != nil {
+                Text("Selected Key: \(selectedKey!)")
             } else {
-                Text("Selected value: \(selected!)")
+                Button("Select Key") {
+                    self.isPresented = true
+                }
+                .sheet(isPresented: $isPresented) {
+                    FillInView(selectedKey: self.$selectedKey)
+                }
             }
         }
     }
 }
 
-
-struct FillInView: View {
-    @Environment(\.presentationMode) var presentationMode
-    @Binding var selected: String?
-    @State private var value: String = ""
-
-    var body: some View {
-        VStack {
-            Text("Enter the value for the variable:")
-            TextField("Value", text: $value)
-            Button("Submit") {
-                // update the selected variable
-                selected = value
-                presentationMode.wrappedValue.dismiss()
-            }
-        }
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
