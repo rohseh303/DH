@@ -12,13 +12,24 @@ struct FillInView: View {
     @Environment(\.presentationMode) var presentationMode
     @Binding var selectedKey: String?
     @State private var searchText: String = ""
-    let options = ["UCLA": "diningmenus", "option2": "key2", "option3": "key3", "option4": "key4", "option5": "key5"]
+    let options = [
+        "University of California, Berkeley": "key1",
+        "University of California, Los Angeles": "diningmenus",
+        "University of California, San Diego": "key2",
+        "University of California, Santa Barbara": "key3",
+        "University of California, Irvine" : "key4",
+        "University of California, Davis": "key5",
+        "University of California, Santa Cruz" : "key6",
+        "University of California, Riverside" : "key7",
+        "University of California, Merced" : "key8",
+        "Stanford" : "key9"
+    ]
     let defaults = UserDefaults.standard
 
     var body: some View {
         VStack {
             SearchBar(text: $searchText)
-            if !searchText.isEmpty {
+            //if !searchText.isEmpty {
                 List {
                     ForEach(options.filter({searchText.isEmpty ? true : $0.key.localizedCaseInsensitiveContains(searchText)}), id: \.key) { option in
                         Text(option.key)
@@ -30,7 +41,7 @@ struct FillInView: View {
                     }
                 }
                 .transition(.move(edge: .top))
-            }
+            //}
         }
     }
 }

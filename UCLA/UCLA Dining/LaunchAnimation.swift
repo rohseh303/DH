@@ -21,11 +21,12 @@ struct LaunchAnimation: View {
     @State private var result: [String: [String : [String]]]?
     
     //for retrieving school name
-    @State private var isPresented: Bool = false
-    @State private var selectedKey: String? = UserDefaults.standard.string(forKey: "selectedKey")
+    var selectedKey : String
+    //@State private var isPresented: Bool = false
+    //@State private var selectedKey: String? = UserDefaults.standard.string(forKey: "selectedKey")
     
     var body: some View {
-        if selectedKey != nil {
+        //if selectedKey != nil {
             if result != nil && isActive {
                 ContentView(APIoutput : result!)
             }
@@ -67,20 +68,20 @@ struct LaunchAnimation: View {
                     }
                 }
             }
-        }
-        else {
-            Button("Select Key") {
-                self.isPresented = true
-            }
-            .sheet(isPresented: $isPresented) {
-                FillInView(selectedKey: self.$selectedKey)
-            }
-        }
+        //}
+        //else {
+        //    Button("Select Your University") {
+        //        self.isPresented = true
+        //    }
+        //    .sheet(isPresented: $isPresented) {
+        //        FillInView(selectedKey: self.$selectedKey)
+        //    }
+        //}
     }
     
     func makePostRequest(completion: @escaping (Result<[String: [String : [String]]], Error>) -> Void) {
-        print("calling API..." + selectedKey!)
-        let complete_api = "https://49jmxvbvc9.execute-api.us-west-1.amazonaws.com/v2/" + selectedKey!
+        print("calling API..." + selectedKey)
+        let complete_api = "https://49jmxvbvc9.execute-api.us-west-1.amazonaws.com/v2/" + selectedKey
         let url = URL(string: complete_api)!
 
         var request = URLRequest(url: url)
@@ -132,6 +133,6 @@ struct LaunchAnimation: View {
 
 struct LaunchAnimation_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchAnimation()
+        LaunchAnimation(selectedKey: "diningmenus")
     }
 }

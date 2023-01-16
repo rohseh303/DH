@@ -33,6 +33,7 @@
 		2B6A7C56296A40E200D977EC /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6A7C55296A40E200D977EC /* BannerAd.swift */; };
 		2B9C9822297240BF00565E75 /* Menu_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C9821297240BF00565E75 /* Menu_Section.swift */; };
 		2B9C98442975191100565E75 /* FillInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C98432975191100565E75 /* FillInView.swift */; };
+		2B9C98462975368400565E75 /* FirstTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C98452975368400565E75 /* FirstTimeView.swift */; };
 		2BCE927629598BF40039AD9E /* fixed_menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927529598BF40039AD9E /* fixed_menu.swift */; };
 		2BCE927C295AA1AF0039AD9E /* Fixed_Menu_Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */; };
 		9D187C9F6AB25B1597D57A88 /* Pods_UCLA_Dining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAA17914E9EC07124D314FC /* Pods_UCLA_Dining.framework */; };
@@ -68,6 +69,7 @@
 		2B6A7C55296A40E200D977EC /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
 		2B9C9821297240BF00565E75 /* Menu_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_Section.swift; sourceTree = "<group>"; };
 		2B9C98432975191100565E75 /* FillInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInView.swift; sourceTree = "<group>"; };
+		2B9C98452975368400565E75 /* FirstTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTimeView.swift; sourceTree = "<group>"; };
 		2BCE927529598BF40039AD9E /* fixed_menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fixed_menu.swift; sourceTree = "<group>"; };
 		2BCE927B295AA1AF0039AD9E /* Fixed_Menu_Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixed_Menu_Section.swift; sourceTree = "<group>"; };
 		9FAA17914E9EC07124D314FC /* Pods_UCLA_Dining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCLA_Dining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,8 +111,9 @@
 			children = (
 				2B663DB529563C8B0087AAE6 /* UCLA-Dining-Info.plist */,
 				2B59AE1729086FA50015ABAB /* UCLAApp.swift */,
-				2B9C98432975191100565E75 /* FillInView.swift */,
+				2B9C98452975368400565E75 /* FirstTimeView.swift */,
 				2B59AE2529086FEA0015ABAB /* LaunchAnimation.swift */,
+				2B9C98432975191100565E75 /* FillInView.swift */,
 				2B59AE1929086FA50015ABAB /* ContentView.swift */,
 				2B6A7C522969252E00D977EC /* AdMob */,
 				2B6A7C2329639DF800D977EC /* fixed_menus_pdf */,
@@ -362,6 +365,7 @@
 				2BCE927C295AA1AF0039AD9E /* Fixed_Menu_Section.swift in Sources */,
 				2B9C98442975191100565E75 /* FillInView.swift in Sources */,
 				2B59AE1A29086FA50015ABAB /* ContentView.swift in Sources */,
+				2B9C98462975368400565E75 /* FirstTimeView.swift in Sources */,
 				2B59AE2C290870590015ABAB /* Hall.swift in Sources */,
 				2B59AE2629086FEA0015ABAB /* LaunchAnimation.swift in Sources */,
 				2B6A7C56296A40E200D977EC /* BannerAd.swift in Sources */,

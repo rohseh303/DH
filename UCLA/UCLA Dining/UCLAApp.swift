@@ -18,7 +18,7 @@ struct UCLAApp: App {
             //first time logging in , go to schoole Selector view
             //if school selector value is already set, then go to launch animation view
             //use the school selector value to be able to adjust the vontent view
-            LaunchAnimation()
+            FirstTimeView()
         }
     }
 }
