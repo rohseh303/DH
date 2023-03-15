@@ -114,9 +114,11 @@ struct SettingsView: View {
                             .frame(height:50)
                             .padding(.top, 20)
                             Spacer()
-                            
+                            Spacer()
+                            VStack {
+                                BannerAd(unitID: "ca-app-pub-7275807859221897/7407946028")
+                            }.frame(height: 45)
                         }.frame(height:400)
-
                     }
                     
                 }
